@@ -1,0 +1,1063 @@
+<!doctype html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <meta name="description" content="Turmas - Propedêutico e Curso Técnico">
+        <meta name="author" content="">
+
+        <title>E. E. Cônego José Eugênio de Faria - Turmas</title>
+        
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="images/Logo_Conêgo.jpg">
+        <link rel="shortcut icon" type="image/png" href="images/Logo_Conêgo.jpg">
+
+        <!-- CSS FILES -->        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&family=Sono:wght@200;300;400;500;700&display=swap" rel="stylesheet">
+                        
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="css/bootstrap-icons.css">
+
+        <link rel="stylesheet" href="css/owl.carousel.min.css">
+        
+        <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+        <link href="css/templatemo-pod-talk.css" rel="stylesheet">
+    </head>
+    
+    <body>
+
+        <main>
+
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand me-lg-5 me-0" href="index.html">
+                        <img src="images/Logo_Conêgo.jpg" class="logo-image img-fluid" alt="Logo Conêgo">
+                    </a>
+
+                    <form action="#" method="get" class="custom-form search-form flex-fill me-3" role="search">
+                        <div class="input-group input-group-lg">    
+                            <input name="Pesquisar" type="Pesquisar" class="form-control" id="Pesquisar" placeholder="Pesquisar" aria-label="Pesquisar">
+
+                            <button type="submit" class="form-control" id="submit">
+                                <i class="bi-search"></i>
+                            </button>
+                        </div>
+                    </form>
+    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-lg-auto">
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">Sobre</a>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle active" href="#" id="navbarLightDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">Turmas</a>
+
+                                <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                    <li><a class="dropdown-item" href="listing-page.html">Curso Técnico</a></li>
+
+                                    <li><a class="dropdown-item active" href="turmas.html">Propedêutico</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="clubes.html">Clubes</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contato</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="calendario.html">Calendário</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="professores.html">Professores</a>
+                            </li>
+                        </ul>
+
+                        <div class="ms-4">
+                            <a href="#section_2" class="btn custom-btn custom-border-btn smoothscroll">Inscrever</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            
+
+             <header class="site-header d-flex flex-column justify-content-center align-items-center">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12 text-center">
+
+                            <h2 class="mb-0">Nossas Turmas</h2>
+                            <p class="text-white">Conheça nossas opções de formação acadêmica</p>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+
+
+
+            <!-- Seção de Abas para Turmas -->
+            <section class="section-padding">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-10 col-12">
+                            <div class="section-title-wrap mb-5">
+                                <h4 class="section-title">Nossas Turmas</h4>
+                            </div>
+
+
+
+                            <!-- Navegação das Abas -->
+                            <ul class="nav nav-tabs" id="turmasTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="curso-tecnico-tab" data-bs-toggle="tab" data-bs-target="#curso-tecnico" type="button" role="tab" aria-controls="curso-tecnico" aria-selected="true">
+                                        <i class="bi-tools me-2"></i>Curso Técnico
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="propedeutico-tab" data-bs-toggle="tab" data-bs-target="#propedeutico" type="button" role="tab" aria-controls="propedeutico" aria-selected="false">
+                                        <i class="bi-book-fill me-2"></i>Propedêutico
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="professores-tab" data-bs-toggle="tab" data-bs-target="#professores" type="button" role="tab" aria-controls="professores" aria-selected="false">
+                                        <i class="bi-people me-2"></i>Professores
+                                    </button>
+                                </li>
+                            </ul>
+
+                            <!-- Conteúdo das Abas -->
+                            <div class="tab-content" id="turmasTabContent">
+                                <!-- Aba Curso Técnico -->
+                                <div class="tab-pane fade show active" id="curso-tecnico" role="tabpanel" aria-labelledby="curso-tecnico-tab">
+                                    <div class="row mt-4">
+                                        <div class="col-lg-3 col-12">
+                                    <div class="custom-block-icon-wrap">
+                                                <div class="custom-block-image-wrap custom-block-image-detail-page">
+                                                    <img src="images/podcast/11683425_4790593.jpg" class="custom-block-image img-fluid" alt="Curso Técnico">
+                                    </div>
+                                    </div>
+                                </div>
+
+                                        <div class="col-lg-9 col-12">
+                                <div class="custom-block-info">
+                                    <div class="custom-block-top d-flex mb-1">
+                                        <small class="me-4">
+                                                        <a href="#">
+                                                            <i class="bi-graduation-cap"></i>
+                                                            Duração: 3 anos
+                                                        </a>
+                                                    </small>
+
+                                                    <small>
+                                            <i class="bi-clock-fill custom-icon"></i>
+                                                        Período Integral
+                                        </small>
+
+                                                    <small class="ms-auto">Turma <span class="badge">2024</span></small>
+                                    </div>
+
+                                                <h2 class="mb-2">Curso Técnico</h2>
+
+                                                <p>Formação técnica completa com foco em desenvolvimento profissional e preparação para o mercado de trabalho.</p>
+
+                                                <p>O curso técnico oferece uma formação sólida em diversas áreas técnicas, combinando teoria e prática para preparar os alunos para o mercado de trabalho.</p>
+
+                                                <p>Com duração de 3 anos, o curso inclui estágios supervisionados e projetos práticos que desenvolvem habilidades técnicas e profissionais.</p>
+
+                                                <!-- Seção de Jogos 2D -->
+                                                <div class="mt-4">
+                                                    <h5><i class="bi-controller me-2"></i>Desenvolvimento de Jogos 2D</h5>
+                                                    <p>Nossa turma de Curso Técnico inclui um módulo especializado em desenvolvimento de jogos 2D, onde os alunos aprendem:</p>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6>Ferramentas e Tecnologias:</h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><i class="bi-check-circle me-2"></i>Unity 2D</li>
+                                                                <li><i class="bi-check-circle me-2"></i>GameMaker Studio</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Construct</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Godot Engine</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Adobe Photoshop</li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="col-md-6">
+                                                            <h6>Conceitos Aprendidos:</h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><i class="bi-star me-2"></i>Game Design</li>
+                                                                <li><i class="bi-star me-2"></i>Programação C#</li>
+                                                                <li><i class="bi-star me-2"></i>Arte Digital</li>
+                                                                <li><i class="bi-star me-2"></i>Animação 2D</li>
+                                                                <li><i class="bi-star me-2"></i>Sound Design</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-3">
+                                                        <h6>Sites e Recursos Recomendados:</h6>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <ul class="list-unstyled">
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://unity.com" target="_blank">Unity Learn</a> - Tutoriais oficiais</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.gamedev.net" target="_blank">GameDev.net</a> - Comunidade de desenvolvedores</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://itch.io" target="_blank">itch.io</a> - Plataforma de jogos independentes</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.youtube.com/c/Brackeys" target="_blank">Brackeys</a> - Canal de tutoriais</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://opengameart.org" target="_blank">OpenGameArt</a> - Recursos gratuitos</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.gamasutra.com" target="_blank">Gamasutra</a> - Artigos sobre game design</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <h6>Recursos Adicionais:</h6>
+                                                                <ul class="list-unstyled">
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.w3schools.com" target="_blank">W3Schools</a> - Aprenda programação web</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a> - Cursos gratuitos de programação</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.udemy.com" target="_blank">Udemy</a> - Cursos técnicos online</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.coursera.org" target="_blank">Coursera</a> - Cursos universitários online</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://github.com" target="_blank">GitHub</a> - Repositório de códigos</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a> - Comunidade de programadores</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
+                                                    <div class="d-flex mb-3 mb-lg-0 mb-md-0">
+                                        <img src="images/profile/woman-posing-black-dress-medium-shot.jpg" class="profile-block-image img-fluid" alt="">
+
+                                        <p>
+                                                            Prof. Maria Silva
+                                            <img src="images/verified.png" class="verified-image img-fluid" alt="">
+                                                            <strong>Coordenadora</strong>
+                                                        </p>
+                                    </div>
+
+                                                    <ul class="social-icon ms-lg-auto ms-md-auto">
+                                                        <li class="social-icon-item">
+                                                            <a href="#" class="social-icon-link bi-instagram"></a>
+                                                        </li>
+
+                                                        <li class="social-icon-item">
+                                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                                        </li>
+
+                                                        <li class="social-icon-item">
+                                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Aba Propedêutico -->
+                                <div class="tab-pane fade" id="propedeutico" role="tabpanel" aria-labelledby="propedeutico-tab">
+                                    <div class="row mt-4">
+                                        <div class="col-lg-3 col-12">
+                                            <div class="custom-block-icon-wrap">
+                                                <div class="custom-block-image-wrap custom-block-image-detail-page">
+                                                    <img src="images/podcast/27376480_7326766.jpg" class="custom-block-image img-fluid" alt="Propedêutico">
+                                </div>
+                            </div>
+                        </div>
+
+                                        <div class="col-lg-9 col-12">
+                                <div class="custom-block-info">
+                                    <div class="custom-block-top d-flex mb-1">
+                                        <small class="me-4">
+                                                        <a href="#">
+                                                            <i class="bi-graduation-cap"></i>
+                                                            Duração: 1 ano
+                                                        </a>
+                                                    </small>
+
+                                                    <small>
+                                            <i class="bi-clock-fill custom-icon"></i>
+                                                        Manhã e Tarde
+                                        </small>
+
+                                                    <small class="ms-auto">Turma <span class="badge">2024</span></small>
+                                    </div>
+
+                                                <h2 class="mb-2">Propedêutico</h2>
+
+                                                <p>Preparação intensiva para vestibulares e concursos públicos, com foco em todas as disciplinas fundamentais.</p>
+
+                                                <p>O curso propedêutico oferece uma preparação completa e estruturada para os principais vestibulares do país, incluindo ENEM, FUVEST, UNICAMP e outros concursos públicos.</p>
+
+                                                <p>Com metodologia comprovada e professores especializados, nossos alunos alcançam excelentes resultados nos exames de admissão.</p>
+
+                                                <!-- Seção de Disciplinas e Preparação -->
+                                                <div class="mt-4">
+                                                    <h5><i class="bi-book me-2"></i>Disciplinas e Preparação</h5>
+                                                    <p>Nossa turma de Propedêutico oferece preparação completa em todas as disciplinas:</p>
+                                                    
+                                                    <div class="row">
+                                                        <div class="col-md-6">
+                                                            <h6>Disciplinas Principais:</h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><i class="bi-check-circle me-2"></i>Matemática</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Português</li>
+                                                                <li><i class="bi-check-circle me-2"></i>História</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Geografia</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Física</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Química</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Biologia</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Filosofia</li>
+                                                                <li><i class="bi-check-circle me-2"></i>Sociologia</li>
+                                                            </ul>
+                                    </div>
+                                                        <div class="col-md-6">
+                                                            <h6>Recursos de Estudo:</h6>
+                                                            <ul class="list-unstyled">
+                                                                <li><i class="bi-star me-2"></i>Simulados semanais</li>
+                                                                <li><i class="bi-star me-2"></i>Material didático completo</li>
+                                                                <li><i class="bi-star me-2"></i>Plantão de dúvidas</li>
+                                                                <li><i class="bi-star me-2"></i>Orientacao vocacional</li>
+                                                                <li><i class="bi-star me-2"></i>Aulas de redação</li>
+                                                                <li><i class="bi-star me-2"></i>Revisões intensivas</li>
+                                                                <li><i class="bi-star me-2"></i>Análise de provas anteriores</li>
+                                                                <li><i class="bi-star me-2"></i>Estratégias de estudo</li>
+                                                            </ul>
+                                    </div>
+                                </div>
+
+                                                    <div class="mt-3">
+                                                        <h6>Sites e Recursos de Estudo:</h6>
+                                                        <div class="row">
+                                                            <div class="col-md-6">
+                                                                <ul class="list-unstyled">
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.inep.gov.br" target="_blank">INEP</a> - Informações sobre ENEM</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.fuvest.br" target="_blank">FUVEST</a> - Vestibular USP</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.comvest.unicamp.br" target="_blank">UNICAMP</a> - Vestibular Unicamp</li>
+                                                                </ul>
+                                                            </div>
+                                                            <div class="col-md-6">
+                                                                <ul class="list-unstyled">
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.khanacademy.org" target="_blank">Khan Academy</a> - Vídeo-aulas gratuitas</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.youtube.com/c/ProfessorFerretto" target="_blank">Professor Ferretto</a> - Matemática</li>
+                                                                    <li><i class="bi-link-45deg me-2"></i><a href="https://www.descomplica.com.br" target="_blank">Descomplica</a> - Plataforma de estudos</li>
+                                                                </ul>
+                                                            </div>
+                                </div>
+                            </div>
+                        </div>
+
+                                                <div class="profile-block profile-detail-block d-flex flex-wrap align-items-center mt-5">
+                                                    <div class="d-flex mb-3 mb-lg-0 mb-md-0">
+                                                        <img src="images/profile/cute-smiling-woman-outdoor-portrait.jpg" class="profile-block-image img-fluid" alt="">
+
+                                                        <p>
+                                                            Prof. Ana Santos
+                                                            <img src="images/verified.png" class="verified-image img-fluid" alt="">
+                                                            <strong>Coordenadora</strong>
+                                                        </p>
+                                                    </div>
+
+                                                    <ul class="social-icon ms-lg-auto ms-md-auto">
+                                                        <li class="social-icon-item">
+                                                            <a href="#" class="social-icon-link bi-instagram"></a>
+                                    </li>
+
+                                                        <li class="social-icon-item">
+                                                            <a href="#" class="social-icon-link bi-twitter"></a>
+                                                        </li>
+
+                                                        <li class="social-icon-item">
+                                                            <a href="#" class="social-icon-link bi-whatsapp"></a>
+                                    </li>
+                                </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Aba Professores -->
+            <section class="section-padding" id="professores-section" style="display: none;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="section-title-wrap mb-4">
+                                <h4 class="section-title">Nossa Equipe Docente</h4>
+                                <p class="text-muted">Conheça nossos professores especializados</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 1 - Adriano -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/adriano.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professor Adriano">
+                                <h6 class="mb-1">Prof. Adriano</h6>
+                                <p class="text-muted small">Filosofia</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 2 - Aiton -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/aiton.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professor Aiton">
+                                <h6 class="mb-1">Prof. Aiton</h6>
+                                <p class="text-muted small">Biologia</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 3 - Caroline -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/caroline.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Caroline">
+                                <h6 class="mb-1">Prof. Caroline</h6>
+                                <p class="text-muted small">Português</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 4 - Cassia -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/casssia.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Cassia">
+                                <h6 class="mb-1">Prof. Cassia</h6>
+                                <p class="text-muted small">Especialista</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 5 - China -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/china.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professor China">
+                                <h6 class="mb-1">Prof. China</h6>
+                                <p class="text-muted small">Inglês</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 6 - Debora -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/debora.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Debora">
+                                <h6 class="mb-1">Prof. Debora</h6>
+                                <p class="text-muted small">Sociologia</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 7 - Gessica -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/gessica.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Gessica">
+                                <h6 class="mb-1">Prof. Gessica</h6>
+                                <p class="text-muted small">Arte</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 8 - Josi -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/josi.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Josi">
+                                <h6 class="mb-1">Prof. Josi</h6>
+                                <p class="text-muted small">Português</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 9 - Marcos -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/marcos.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professor Marcos">
+                                <h6 class="mb-1">Prof. Marcos</h6>
+                                <p class="text-muted small">Geografia</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 10 - Miller -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/miller.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professor Miller">
+                                <h6 class="mb-1">Prof. Miller</h6>
+                                <p class="text-muted small">História</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 11 - Paulo -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/paulo.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professor Paulo">
+                                <h6 class="mb-1">Prof. Paulo</h6>
+                                <p class="text-muted small">Disciplinas Técnicas</p>
+                            </div>
+                        </div>
+
+                        <!-- Professor 12 - Rita -->
+                        <div class="col-lg-3 col-md-4 col-6 mb-4">
+                            <div class="text-center">
+                                <img src="professores/rita.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Rita">
+                                <h6 class="mb-1">Prof. Rita</h6>
+                                <p class="text-muted small">Inglês e Projeto de Vida</p>
+                            </div>
+                        </div>
+
+                                                        <!-- Professor 13 - Tais -->
+                                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                    <div class="text-center">
+                                        <img src="professores/tais.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Tais">
+                                        <h6 class="mb-1">Prof. Tais</h6>
+                                        <p class="text-muted small">Matemática</p>
+                                    </div>
+                                </div>
+
+                                <!-- Professor 14 - Rita -->
+                                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                    <div class="text-center">
+                                        <img src="professores/rita.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Rita">
+                                        <h6 class="mb-1">Prof. Rita</h6>
+                                        <p class="text-muted small">Inglês e Projeto de Vida</p>
+                                    </div>
+                                </div>
+
+                                <!-- Professor 15 - Alex -->
+                                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                    <div class="text-center">
+                                        <img src="professores/alex.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professor Alex">
+                                        <h6 class="mb-1">Prof. Alex</h6>
+                                        <p class="text-muted small">Práticas Experimentais e Biologia</p>
+                                    </div>
+                                </div>
+
+                                <!-- Professor 16 - Rita Maura -->
+                                <div class="col-lg-3 col-md-4 col-6 mb-4">
+                                    <div class="text-center">
+                                        <img src="professores/Rita Maura.jpeg" class="img-fluid rounded-circle mb-3" style="width: 120px; height: 120px; object-fit: cover;" alt="Professora Rita Maura">
+                                        <h6 class="mb-1">Prof. Rita Maura</h6>
+                                        <p class="text-muted small">Língua Portuguesa</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                    <!-- Seção de Matérias por Área -->
+                    <div class="row mt-5">
+                        <div class="col-lg-12 col-12">
+                            <div class="section-title-wrap mb-4">
+                                <h4 class="section-title">Matérias por Área</h4>
+                            </div>
+                        </div>
+
+                        <!-- Ciências Exatas -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block custom-block-full">
+                                <div class="custom-block-info">
+                                    <h5 class="mb-3">
+                                        <i class="bi-calculator me-2"></i>
+                                        Ciências Exatas
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi-person me-2"></i><strong>Prof. Tais</strong> - Matemática</li>
+                                        <li><i class="bi-person me-2"></i><strong>Prof. Paulo</strong> - Disciplinas Técnicas</li>
+                                        <li><i class="bi-person me-2"></i><strong>Prof. Aiton</strong> - Biologia</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ciências Humanas -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block custom-block-full">
+                                <div class="custom-block-info">
+                                    <h5 class="mb-3">
+                                        <i class="bi-people me-2"></i>
+                                        Ciências Humanas
+                                    </h5>
+                                    <ul class="list-unstyled">
+                                        <li><i class="bi-person me-2"></i><strong>Prof. Adriano</strong> - Filosofia</li>
+                                        <li><i class="bi-person me-2"></i><strong>Prof. Debora</strong> - Sociologia</li>
+                                        <li><i class="bi-person me-2"></i><strong>Prof. Marcos</strong> - Geografia</li>
+                                        <li><i class="bi-person me-2"></i><strong>Prof. Miller</strong> - História</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Linguagens e Outras -->
+                        <div class="col-lg-4 col-md-6 col-12 mb-4">
+                            <div class="custom-block custom-block-full">
+                                <div class="custom-block-info">
+                                    <h5 class="mb-3">
+                                        <i class="bi-translate me-2"></i>
+                                        Linguagens e Outras
+                                    </h5>
+                                                                                <ul class="list-unstyled">
+                                                <li><i class="bi-person me-2"></i><strong>Prof. Caroline</strong> - Português</li>
+                                                <li><i class="bi-person me-2"></i><strong>Prof. Josi</strong> - Português</li>
+                                                <li><i class="bi-person me-2"></i><strong>Prof. China</strong> - Inglês</li>
+                                                <li><i class="bi-person me-2"></i><strong>Prof. Rita</strong> - Inglês e Projeto de Vida</li>
+                                                <li><i class="bi-person me-2"></i><strong>Prof. Gessica</strong> - Arte</li>
+                                                <li><i class="bi-person me-2"></i><strong>Prof. Cassia</strong> - Especialista</li>
+                                                <li><i class="bi-person me-2"></i><strong>Prof. Alex</strong> - Práticas Experimentais e Biologia</li>
+                                                <li><i class="bi-person me-2"></i><strong>Prof. Rita Maura</strong> - Língua Portuguesa</li>
+                                            </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="related-podcast-section section-padding">
+                <div class="container">
+                    <div class="row">
+
+                        <div class="col-lg-12 col-12">
+                            <div class="section-title-wrap mb-5">
+                                <h4 class="section-title">Outras Turmas</h4>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block custom-block-full">
+                                <div class="custom-block-image-wrap">
+                                    <a href="#propedeutico" data-bs-toggle="tab">
+                                        <img src="images/podcast/27376480_7326766.jpg" class="custom-block-image img-fluid" alt="Propedêutico">
+                                    </a>
+                                </div>
+
+                                <div class="custom-block-info">
+                                    <h5 class="mb-2">
+                                        <a href="#propedeutico" data-bs-toggle="tab">
+                                            Propedêutico
+                                        </a>
+                                    </h5>
+
+                                    <div class="profile-block d-flex">
+                                        <img src="images/profile/woman-posing-black-dress-medium-shot.jpg" class="profile-block-image img-fluid" alt="">
+
+                                        <p>Prof. Ana Santos
+                                            <strong>Coordenadora</strong></p>
+                                    </div>
+
+                                    <p class="mb-0">Preparação intensiva para vestibulares e concursos públicos.</p>
+
+                                    <div class="custom-block-bottom d-flex justify-content-between mt-3">
+                                        <a href="#" class="bi-people me-1">
+                                            <span>30 alunos</span>
+                                        </a>
+
+                                        <a href="#" class="bi-star me-1">
+                                            <span>4.9</span>
+                                        </a>
+
+                                        <a href="#" class="bi-calendar me-1">
+                                            <span>1 ano</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="social-share d-flex flex-column ms-auto">
+                                    <a href="#" class="badge ms-auto">
+                                        <i class="bi-heart"></i>
+                                    </a>
+
+                                    <a href="#" class="badge ms-auto">
+                                        <i class="bi-bookmark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 col-12 mb-4 mb-lg-0">
+                            <div class="custom-block custom-block-full">
+                                <div class="custom-block-image-wrap">
+                                    <a href="#curso-tecnico" data-bs-toggle="tab">
+                                        <img src="images/podcast/27670664_7369753.jpg" class="custom-block-image img-fluid" alt="Curso Técnico">
+                                    </a>
+                                </div>
+
+                                <div class="custom-block-info">
+                                    <h5 class="mb-2">
+                                        <a href="#curso-tecnico" data-bs-toggle="tab">
+                                            Curso Técnico
+                                        </a>
+                                    </h5>
+
+                                    <div class="profile-block d-flex">
+                                        <img src="images/profile/cute-smiling-woman-outdoor-portrait.jpg" class="profile-block-image img-fluid" alt="">
+
+                                        <p>
+                                            Prof. Maria Silva
+                                            <img src="images/verified.png" class="verified-image img-fluid" alt="">
+                                            <strong>Coordenadora</strong>
+                                        </p>
+                                    </div>
+
+                                    <p class="mb-0">Formação técnica completa para o mercado de trabalho.</p>
+
+                                    <div class="custom-block-bottom d-flex justify-content-between mt-3">
+                                        <a href="#" class="bi-people me-1">
+                                            <span>45 alunos</span>
+                                        </a>
+
+                                        <a href="#" class="bi-star me-1">
+                                            <span>4.8</span>
+                                        </a>
+
+                                        <a href="#" class="bi-calendar me-1">
+                                            <span>3 anos</span>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="social-share d-flex flex-column ms-auto">
+                                    <a href="#" class="badge ms-auto">
+                                        <i class="bi-heart"></i>
+                                    </a>
+
+                                    <a href="#" class="badge ms-auto">
+                                        <i class="bi-bookmark"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Seção de Informações das Turmas -->
+            <section class="section-padding pt-0">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-12">
+                            <div class="section-title-wrap mb-5">
+                                <h4 class="section-title">Informações das Turmas</h4>
+                            </div>
+                        </div>
+
+                        <!-- Propedêutico - Informações -->
+                        <div class="col-lg-6 col-12 mb-4">
+                            <div class="custom-block custom-block-full">
+                                <div class="custom-block-info">
+                                    <h5 class="mb-3">
+                                        <i class="bi-book-fill me-2"></i>
+                                        Propedêutico
+                                    </h5>
+
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Disciplinas:</h6>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi-check-circle me-2"></i>Matemática</li>
+                                                <li><i class="bi-check-circle me-2"></i>Português</li>
+                                                <li><i class="bi-check-circle me-2"></i>História</li>
+                                                <li><i class="bi-check-circle me-2"></i>Geografia</li>
+                                                <li><i class="bi-check-circle me-2"></i>Física</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Benefícios:</h6>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi-star me-2"></i>Preparação para vestibular</li>
+                                                <li><i class="bi-star me-2"></i>Simulados regulares</li>
+                                                <li><i class="bi-star me-2"></i>Material didático</li>
+                                                <li><i class="bi-star me-2"></i>Plantão de dúvidas</li>
+                                                <li><i class="bi-star me-2"></i>Orientacao vocacional</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-3">
+                                        <strong>Duração:</strong> 1 ano<br>
+                                        <strong>Horário:</strong> Manhã e Tarde<br>
+                                        <strong>Coordenadora:</strong> Prof. Ana Santos
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Curso Técnico - Informações -->
+                        <div class="col-lg-6 col-12 mb-4">
+                            <div class="custom-block custom-block-full">
+                                <div class="custom-block-info">
+                                    <h5 class="mb-3">
+                                        <i class="bi-tools me-2"></i>
+                                        Curso Técnico
+                                    </h5>
+                                    
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <h6>Áreas:</h6>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi-check-circle me-2"></i>Informática</li>
+                                                <li><i class="bi-check-circle me-2"></i>Administração</li>
+                                                <li><i class="bi-check-circle me-2"></i>Enfermagem</li>
+                                                <li><i class="bi-check-circle me-2"></i>Mecatrônica</li>
+                                                <li><i class="bi-check-circle me-2"></i>Logística</li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <h6>Benefícios:</h6>
+                                            <ul class="list-unstyled">
+                                                <li><i class="bi-star me-2"></i>Estágio supervisionado</li>
+                                                <li><i class="bi-star me-2"></i>Laboratórios equipados</li>
+                                                <li><i class="bi-star me-2"></i>Projetos práticos</li>
+                                                <li><i class="bi-star me-2"></i>Certificação técnica</li>
+                                                <li><i class="bi-star me-2"></i>Inserção no mercado</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="mt-3">
+                                        <strong>Duração:</strong> 3 anos<br>
+                                        <strong>Horário:</strong> Período Integral<br>
+                                        <strong>Coordenadora:</strong> Prof. Maria Silva
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-6 col-12 mb-5 mb-lg-0">
+                        <div class="subscribe-form-wrap">
+                            <h6>Inscreva-se nas Turmas</h6>
+
+                            <form class="custom-form subscribe-form" action="#" method="get" role="form">
+                                <input type="email" name="subscribe-email" id="subscribe-email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="Email para inscrição" required="">
+
+                                <div class="col-lg-12 col-12">
+                                    <button type="submit" class="form-control" id="submit">Inscrever</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12 mb-4 mb-md-0 mb-lg-0">
+                        <h6 class="site-footer-title mb-3">Contato</h6>
+
+                        <p class="mb-2"><strong class="d-inline me-2">Telefone:</strong> 010-020-0340</p>
+
+                        <p>
+                            <strong class="d-inline me-2">Email:</strong>
+                            <a href="#">turmas@escola.com</a> 
+                        </p>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h6 class="site-footer-title mb-3">Redes Sociais</h6>
+
+                        <ul class="social-icon">
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-instagram"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-twitter"></a>
+                            </li>
+
+                            <li class="social-icon-item">
+                                <a href="#" class="social-icon-link bi-whatsapp"></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="container pt-5">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-2 col-md-3 col-12">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/pod-talk-logo.png" class="logo-image img-fluid" alt="Portal Escolar">
+                        </a>
+                    </div>
+
+                    <div class="col-lg-7 col-md-9 col-12">
+                        <ul class="site-footer-links">
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Página Inicial</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Turmas</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Centro de Ajuda</a>
+                            </li>
+
+                            <li class="site-footer-link-item">
+                                <a href="#" class="site-footer-link">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-12">
+                        <p class="copyright-text mb-0">Copyright © 2024 Portal Escolar
+                        <br><br>
+                        Design: <a rel="nofollow" href="https://templatemo.com/page/1" target="_parent">TemplateMo</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+        <!-- JAVASCRIPT FILES -->
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/owl.carousel.min.js"></script>
+        <script src="js/custom.js"></script>
+
+        <!-- Script personalizado para funcionalidade das abas -->
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                // Elementos das abas
+                const cursoTecnicoTab = document.getElementById('curso-tecnico-tab');
+                const propedeuticoTab = document.getElementById('propedeutico-tab');
+                const professoresTab = document.getElementById('professores-tab');
+                
+                // Elementos do conteúdo das abas
+                const cursoTecnicoContent = document.getElementById('curso-tecnico');
+                const propedeuticoContent = document.getElementById('propedeutico');
+                const professoresSection = document.getElementById('professores-section');
+                
+                // Função para alternar entre as abas usando Bootstrap
+                function switchTab(tabElement, contentElement) {
+                    console.log('Switching to tab:', tabElement.id);
+                    
+                    // Remove classes ativas de todas as abas
+                    cursoTecnicoTab.classList.remove('active');
+                    propedeuticoTab.classList.remove('active');
+                    professoresTab.classList.remove('active');
+                    cursoTecnicoContent.classList.remove('show', 'active');
+                    propedeuticoContent.classList.remove('show', 'active');
+                    
+                    // Esconde a seção de professores
+                    if (professoresSection) {
+                        professoresSection.style.display = 'none';
+                    }
+                    
+                    // Adiciona classes ativas à aba selecionada
+                    tabElement.classList.add('active');
+                    contentElement.classList.add('show', 'active');
+                    
+                    // Se for a aba de professores, mostra a seção
+                    if (tabElement.id === 'professores-tab') {
+                        if (professoresSection) {
+                            professoresSection.style.display = 'block';
+                        }
+                    }
+                    
+                    // Atualiza atributos aria-selected
+                    cursoTecnicoTab.setAttribute('aria-selected', 'false');
+                    propedeuticoTab.setAttribute('aria-selected', 'false');
+                    professoresTab.setAttribute('aria-selected', 'false');
+                    tabElement.setAttribute('aria-selected', 'true');
+                    
+                    console.log('Tab switched successfully');
+                }
+                
+                // Event listeners para os botões das abas (usando Bootstrap)
+                cursoTecnicoTab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    switchTab(cursoTecnicoTab, cursoTecnicoContent);
+                });
+                
+                propedeuticoTab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    switchTab(propedeuticoTab, propedeuticoContent);
+                });
+                
+                professoresTab.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    switchTab(professoresTab, null);
+                });
+                
+                // Adiciona funcionalidade aos links de navegação do menu dropdown
+                const dropdownLinks = document.querySelectorAll('.dropdown-item');
+                dropdownLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        if (this.textContent.includes('Propedêutico')) {
+                            switchTab(propedeuticoTab, propedeuticoContent);
+                        } else if (this.textContent.includes('Curso Técnico')) {
+                            switchTab(cursoTecnicoTab, cursoTecnicoContent);
+                        }
+                    });
+                });
+                
+                // Adiciona funcionalidade aos cards de outras turmas
+                const turmaCards = document.querySelectorAll('[data-bs-toggle="tab"]');
+                turmaCards.forEach(card => {
+                    card.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        
+                        const target = this.getAttribute('href');
+                        if (target === '#propedeutico') {
+                            switchTab(propedeuticoTab, propedeuticoContent);
+                        } else if (target === '#curso-tecnico') {
+                            switchTab(cursoTecnicoTab, cursoTecnicoContent);
+                        }
+                    });
+                });
+                
+                // Verifica se os elementos foram encontrados
+                console.log('Elements found:', {
+                    cursoTecnicoTab: !!cursoTecnicoTab,
+                    propedeuticoTab: !!propedeuticoTab,
+                    professoresTab: !!professoresTab,
+                    cursoTecnicoContent: !!cursoTecnicoContent,
+                    propedeuticoContent: !!propedeuticoContent,
+                    professoresSection: !!professoresSection
+                });
+                
+                // Força a exibição inicial do Curso Técnico
+                setTimeout(() => {
+                    switchTab(cursoTecnicoTab, cursoTecnicoContent);
+                }, 100);
+                
+                // Inicializa o Bootstrap para as abas
+                if (typeof bootstrap !== 'undefined') {
+                    const tabElements = document.querySelectorAll('[data-bs-toggle="tab"]');
+                    tabElements.forEach(tab => {
+                        new bootstrap.Tab(tab);
+                    });
+                } else {
+                    console.log('Bootstrap not found, using custom tab functionality');
+                }
+            });
+        </script>
+
+    </body>
+</html>

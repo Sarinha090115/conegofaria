@@ -1,0 +1,2079 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tijolinhos do Saber - Materiais Pedagógicos para Educação Infantil</title>
+    <meta name="description" content="Descubra materiais pedagógicos inovadores para educação infantil. Alfabetização, matemática, artes, ciências, música e psicomotricidade.">
+    <meta name="keywords" content="educação infantil, materiais pedagógicos, alfabetização, matemática, artes, ciências, música, psicomotricidade">
+    
+    <!-- Acessibilidade: Meta tags adicionais para melhor experiência -->
+    <meta name="theme-color" content="#ff6b6b">
+    <meta name="color-scheme" content="light">
+    
+    <!-- Acessibilidade: Suporte para preferências de movimento reduzido -->
+    <meta name="prefers-reduced-motion" content="no-preference">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* =================================
+           RESET E CONFIGURAÇÕES GLOBAIS
+        ================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            /* Acessibilidade: Respeitar preferências de movimento reduzido */
+            scroll-behavior: smooth;
+        }
+
+        /* Acessibilidade: Respeitar preferências de animação do usuário */
+        @media (prefers-reduced-motion: reduce) {
+            html {
+                scroll-behavior: auto;
+            }
+            
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+                scroll-behavior: auto !important;
+            }
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9ff;
+            /* Acessibilidade: Garantir contraste mínimo */
+            min-height: 100vh;
+        }
+
+        /* Acessibilidade: Skip link para navegação por teclado */
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 6px;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            text-decoration: none;
+            border-radius: 0 0 4px 4px;
+            z-index: 100000;
+            font-weight: bold;
+            transition: top 0.3s;
+        }
+
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Acessibilidade: Foco visível melhorado para todos os elementos interativos */
+        *:focus {
+            outline: 3px solid #4c9aff;
+            outline-offset: 2px;
+        }
+
+        /* Acessibilidade: Remover outline padrão apenas quando necessário */
+        *:focus:not(:focus-visible) {
+            outline: none;
+        }
+
+        /* Acessibilidade: Foco visível específico para links e botões */
+        a:focus-visible,
+        button:focus-visible,
+        input:focus-visible,
+        textarea:focus-visible,
+        select:focus-visible {
+            outline: 3px solid #4c9aff;
+            outline-offset: 2px;
+            border-radius: 4px;
+        }
+
+        /* =================================
+           VARIÁVEIS CSS - CORES ALEGRES
+        ================================= */
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --accent-color: #45b7d1;
+            --warning-color: #feca57;
+            --success-color: #48cab2;
+            --text-dark: #2c3e50;
+            --text-light: #5a6c7d; /* Melhorado para contraste AA */
+            --bg-light: #f8f9ff;
+            --bg-white: #ffffff;
+            --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+            --shadow-medium: 0 4px 20px rgba(0,0,0,0.15);
+            --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-section: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            
+            /* Acessibilidade: Cores de foco e erro */
+            --focus-color: #4c9aff;
+            --error-color: #e74c3c;
+            --success-color-dark: #27ae60;
+            
+            /* Acessibilidade: Tamanhos mínimos para toque */
+            --min-touch-target: 44px;
+            --button-min-height: 44px;
+        }
+
+        /* =================================
+           TIPOGRAFIA
+        ================================= */
+        /* Acessibilidade: Melhor hierarquia de headings */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Fredoka One', cursive;
+            color: var(--text-dark);
+            line-height: 1.2;
+            margin-top: 1.5rem;
+            /* Acessibilidade: Melhor espaçamento para leitores de tela */
+        }
+
+        h1 {
+            font-size: clamp(2.5rem, 4vw, 3.5rem); /* Acessibilidade: Texto responsivo */
+            margin-bottom: 1rem;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: clamp(2rem, 3vw, 2.5rem); /* Acessibilidade: Texto responsivo */
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: clamp(1.5rem, 2.5vw, 1.8rem); /* Acessibilidade: Texto responsivo */
+            margin-bottom: 1rem;
+        }
+
+        h4 {
+            font-size: clamp(1.3rem, 2vw, 1.5rem);
+            margin-bottom: 0.8rem;
+        }
+
+        p {
+            font-size: clamp(1rem, 1.5vw, 1.1rem); /* Acessibilidade: Texto responsivo */
+            margin-bottom: 1rem;
+            color: var(--text-light);
+            /* Acessibilidade: Melhor contraste */
+            max-width: 70ch; /* Acessibilidade: Largura ideal para leitura */
+        }
+
+        /* Acessibilidade: Texto para leitores de tela apenas */
+        .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* Acessibilidade: Destacar texto importante */
+        .text-highlight {
+            background-color: rgba(255, 107, 107, 0.1);
+            padding: 0.2em 0.4em;
+            border-radius: 4px;
+        }
+
+        /* =================================
+           HEADER E NAVEGAÇÃO
+        ================================= */
+        .header {
+            background: var(--bg-white);
+            box-shadow: var(--shadow-light);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            padding: 0.75rem 1rem; /* Acessibilidade: Tamanho mínimo de toque */
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+            /* Acessibilidade: Tamanho mínimo de toque */
+            min-height: var(--min-touch-target);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .nav-link:hover,
+        .nav-link:focus {
+            color: var(--primary-color);
+            background: rgba(255, 107, 107, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Acessibilidade: Estado ativo do link de navegação */
+        .nav-link[aria-current="page"] {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--text-dark);
+            cursor: pointer;
+            /* Acessibilidade: Tamanho mínimo de toque */
+            min-width: var(--min-touch-target);
+            min-height: var(--min-touch-target);
+            border-radius: 8px;
+            /* Acessibilidade: Área de toque adequada */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mobile-menu-btn:hover,
+        .mobile-menu-btn:focus {
+            background: rgba(255, 107, 107, 0.1);
+        }
+
+        /* Acessibilidade: Label para o botão do menu mobile */
+        .mobile-menu-btn .sr-only {
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0, 0, 0, 0);
+            white-space: nowrap;
+            border: 0;
+        }
+
+        /* =================================
+           HERO SECTION
+        ================================= */
+        .hero {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://imgs.search.brave.com/8UTvcAo921zUlFH0ycx8PUrtTo_Zb3vAbptvJutLPT8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMjY4/MDI3MC9wZXhlbHMt/cGhvdG8tMjY4MDI3/MC5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA center/cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-button {
+            display: inline-flex; /* Acessibilidade: Melhor alinhamento do ícone */
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            background: var(--warning-color);
+            color: var(--text-dark);
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-medium);
+            animation: pulse 2s infinite;
+            /* Acessibilidade: Tamanho mínimo de toque */
+            min-height: var(--button-min-height);
+            border: 2px solid transparent;
+        }
+
+        .cta-button:hover,
+        .cta-button:focus {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+            background: #ffd93d;
+        }
+
+        /* Acessibilidade: Estado de foco específico para CTA */
+        .cta-button:focus-visible {
+            outline: 3px solid var(--focus-color);
+            outline-offset: 2px;
+        }
+
+        /* Acessibilidade: Versão sem animação para preferências de movimento reduzido */
+        @media (prefers-reduced-motion: reduce) {
+            .cta-button {
+                animation: none;
+            }
+        }
+
+        /* =================================
+           SECTIONS GERAIS
+        ================================= */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-bg {
+            background: var(--bg-white);
+        }
+
+        .section-alt {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        /* =================================
+           CARDS DE CATEGORIAS
+        ================================= */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .category-card {
+            background: var(--bg-white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInScale 0.6s ease forwards;
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+        }
+
+        .category-card:nth-child(1) { animation-delay: 0.1s; }
+        .category-card:nth-child(2) { animation-delay: 0.2s; }
+        .category-card:nth-child(3) { animation-delay: 0.3s; }
+        .category-card:nth-child(4) { animation-delay: 0.4s; }
+        .category-card:nth-child(5) { animation-delay: 0.5s; }
+        .category-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-section);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .category-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover .category-image {
+            transform: scale(1.05);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .category-title {
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .category-description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .category-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-features li {
+            padding: 0.3rem 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .category-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        .learn-more-btn {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            /* Acessibilidade: Tamanho mínimo de toque */
+            min-height: var(--button-min-height);
+            min-width: 120px;
+            border: 2px solid transparent;
+        }
+
+        .learn-more-btn:hover,
+        .learn-more-btn:focus {
+            background: #3498db;
+            transform: translateY(-2px);
+        }
+
+        /* Acessibilidade: Estado de foco para botões secundários */
+        .learn-more-btn:focus-visible {
+            outline: 3px solid var(--focus-color);
+            outline-offset: 2px;
+        }
+
+        /* =================================
+           SEÇÃO SOBRE
+        ================================= */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .about-text {
+            animation: fadeInLeft 1s ease;
+        }
+
+        .about-image {
+            text-align: center;
+            animation: fadeInRight 1s ease;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* =================================
+           FORMULÁRIO DE CONTATO
+        ================================= */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-form {
+            background: var(--bg-white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e1e8ed;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+        }
+
+        /* Acessibilidade: Melhor indicação de campos obrigatórios */
+        .form-group label::after {
+            content: " *";
+            color: var(--error-color);
+            font-weight: bold;
+        }
+
+        .form-group.optional label::after {
+            display: none;
+        }
+
+        /* Acessibilidade: Estilos para mensagens de erro */
+        .form-group .error-message {
+            color: var(--error-color);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .form-group .error-message i {
+            flex-shrink: 0;
+        }
+
+        /* Acessibilidade: Estado de erro nos inputs */
+        .form-group input.error,
+        .form-group textarea.error {
+            border-color: var(--error-color);
+            background-color: rgba(231, 76, 60, 0.05);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+            /* Acessibilidade: Tamanho mínimo de toque */
+            min-height: var(--button-min-height);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+        }
+
+        .submit-btn:hover,
+        .submit-btn:focus {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+
+        /* Acessibilidade: Estado de foco para botão de envio */
+        .submit-btn:focus-visible {
+            outline: 3px solid var(--focus-color);
+            outline-offset: 2px;
+        }
+
+        /* Acessibilidade: Estado desabilitado */
+        .submit-btn:disabled {
+            background: #bdc3c7;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .contact-info {
+            padding: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-white);
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-right: 1rem;
+            width: 50px;
+            text-align: center;
+        }
+
+        .contact-item-content h4 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item-content p {
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        /* =================================
+           RODAPÉ
+        ================================= */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: #bdc3c7;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 2rem;
+            color: #7f8c8d;
+        }
+
+        /* =================================
+           BOTÃO VOLTAR AO TOPO
+        ================================= */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: var(--shadow-medium);
+            /* Acessibilidade: Área de toque adequada */
+            min-width: var(--min-touch-target);
+            min-height: var(--min-touch-target);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover,
+        .back-to-top:focus {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Acessibilidade: Estado de foco para botão voltar ao topo */
+        .back-to-top:focus-visible {
+            outline: 3px solid var(--focus-color);
+            outline-offset: 2px;
+        }
+
+        /* Acessibilidade: Suporte para zoom até 200% */
+        @media (min-resolution: 2dppx) {
+            .container {
+                max-width: 90%;
+            }
+            
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Acessibilidade: Melhorias para leitores de tela */
+        @media (prefers-reduced-motion: reduce) {
+            .back-to-top,
+            .category-card,
+            .feature-item,
+            .contact-item {
+                transition: none;
+                animation: none;
+            }
+        }
+
+        /* Acessibilidade: Gerenciar foco para mouse vs teclado */
+        .using-mouse *:focus {
+            outline: none;
+        }
+
+        .using-mouse *:focus-visible {
+            outline: 3px solid var(--focus-color);
+            outline-offset: 2px;
+        }
+
+        /* Acessibilidade: Cards focáveis via teclado */
+        .category-card:focus {
+            outline: 3px solid var(--focus-color);
+            outline-offset: 2px;
+            transform: translateY(-5px);
+        }
+
+        /* Acessibilidade: Links de contato melhorados */
+        .contact-info a {
+            color: inherit;
+            text-decoration: underline;
+            text-decoration-color: var(--primary-color);
+        }
+
+        .contact-info a:hover,
+        .contact-info a:focus {
+            color: var(--primary-color);
+            text-decoration-thickness: 2px;
+        }
+
+        /* Acessibilidade: Footer links melhorados */
+        .footer a:focus-visible {
+            outline: 2px solid var(--focus-color);
+            outline-offset: 2px;
+            border-radius: 2px;
+        }
+
+        /* =================================
+           ANIMAÇÕES
+        ================================= */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* =================================
+           RESPONSIVIDADE
+        ================================= */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--bg-white);
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                padding-top: 2rem;
+                transition: left 0.3s ease;
+                box-shadow: var(--shadow-medium);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .category-card {
+                padding: 1.5rem;
+            }
+
+            .back-to-top {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* =================================
+           UTILIDADES
+        ================================= */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Acessibilidade: Skip links para navegação rápida -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <a href="#nav-menu" class="skip-link">Pular para a navegação</a>
+    <a href="#contato" class="skip-link">Pular para o contato</a>
+
+    <!-- HEADER E NAVEGAÇÃO -->
+    <header class="header" id="header" role="banner">
+        <div class="nav-container">
+            <a href="#home" class="logo" aria-label="Tijolinhos do Saber - Página inicial">
+                <i class="fas fa-cube" aria-hidden="true"></i>
+                Tijolinhos do Saber
+            </a>
+            
+            <!-- Acessibilidade: Navegação principal com ARIA -->
+            <nav role="navigation" aria-label="Menu principal">
+                <ul class="nav-menu" id="nav-menu" role="menubar">
+                    <li role="none"><a href="#home" class="nav-link" role="menuitem" aria-current="page">Início</a></li>
+                    <li role="none"><a href="#categorias" class="nav-link" role="menuitem">Categorias</a></li>
+                    <li role="none"><a href="#sobre" class="nav-link" role="menuitem">Sobre</a></li>
+                    <li role="none"><a href="#contato" class="nav-link" role="menuitem">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <!-- Acessibilidade: Botão do menu mobile com texto descritivo -->
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-controls="nav-menu" aria-label="Abrir menu de navegação">
+                <i class="fas fa-bars" aria-hidden="true"></i>
+                <span class="sr-only">Menu</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main id="main-content" role="main">
+        <!-- SEÇÃO HERO -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title">Tijolinhos do Saber</h1>
+                <p>Materiais pedagógicos inovadores que transformam o aprendizado em uma <span class="text-highlight">aventura divertida e significativa</span> para crianças da educação infantil.</p>
+                <a href="#categorias" class="cta-button" aria-describedby="cta-description">
+                    <i class="fas fa-rocket" aria-hidden="true"></i>
+                    Descobrir Materiais
+                </a>
+                <!-- Acessibilidade: Descrição adicional para leitores de tela -->
+                <span id="cta-description" class="sr-only">Explorar nossa coleção de materiais pedagógicos para educação infantil</span>
+            </div>
+        </section>
+
+        <!-- SEÇÃO CATEGORIAS -->
+        <section id="categorias" class="section section-bg" aria-labelledby="categorias-title">
+            <div class="container">
+                <h2 id="categorias-title">Nossas Categorias de Materiais</h2>
+                <p class="text-center mb-2">Explore nossa coleção completa de materiais pedagógicos desenvolvidos especialmente para potencializar o desenvolvimento infantil</p>
+            
+            <!-- Acessibilidade: Grid de categorias com roles apropriados -->
+            <div class="categories-grid" role="region" aria-labelledby="categorias-title">
+                <!-- Alfabetização -->
+                <article class="category-card" role="article" aria-labelledby="alfabetizacao-title">
+                    <i class="fas fa-book-open category-icon" aria-hidden="true"></i>
+                    <!-- Acessibilidade: Texto alternativo descritivo e específico -->
+                    <img src="https://cdn.abacus.ai/images/7ee7638c-b4ce-4173-bbea-c8b4d323f639.png" 
+                         alt="Criança sorrindo enquanto aprende a ler com cartões coloridos e livros didáticos de alfabetização infantil" 
+                         class="category-image">
+                    <h3 id="alfabetizacao-title" class="category-title">Alfabetização</h3>
+                    <p class="category-description">Materiais lúdicos e interativos para desenvolver a leitura e escrita de forma natural e divertida.</p>
+                    <!-- Acessibilidade: Lista com role adequado -->
+                    <ul class="category-features" aria-label="Recursos de alfabetização disponíveis">
+                        <li>Cartões ilustrados com palavras</li>
+                        <li>Jogos de formação de sílabas</li>
+                        <li>Livrinhos de histórias simples</li>
+                        <li>Alfabeto móvel colorido</li>
+                        <li>Atividades de coordenação motora</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn" aria-label="Saiba mais sobre materiais de alfabetização">Saiba Mais</a>
+                </article>
+
+                <!-- Matemática -->
+                <article class="category-card" role="article" aria-labelledby="matematica-title">
+                    <i class="fas fa-calculator category-icon" aria-hidden="true"></i>
+                    <img src="https://cdn.abacus.ai/images/615ba73d-ae58-4bc7-9a67-b9b31a7adc85.png" 
+                         alt="Crianças brincando com blocos coloridos de contagem, ábacos e formas geométricas em uma mesa de atividades matemáticas" 
+                         class="category-image">
+                    <h3 id="matematica-title" class="category-title">Matemática</h3>
+                    <p class="category-description">Recursos manipulativos que tornam os conceitos matemáticos concretos e compreensíveis.</p>
+                    <ul class="category-features" aria-label="Recursos de matemática disponíveis">
+                        <li>Blocos de contagem coloridos</li>
+                        <li>Ábacos e materiais de contagem</li>
+                        <li>Jogos de formas geométricas</li>
+                        <li>Atividades de classificação</li>
+                        <li>Números e quantidades visuais</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn" aria-label="Saiba mais sobre materiais de matemática">Saiba Mais</a>
+                </article>
+
+                <!-- Artes -->
+                <article class="category-card" role="article" aria-labelledby="artes-title">
+                    <i class="fas fa-palette category-icon" aria-hidden="true"></i>
+                    <img src="https://cdn.abacus.ai/images/92b09361-2eda-4147-9bdb-ca71384836b1.png" 
+                         alt="Mesa de arte infantil com tintas coloridas, pincéis, papéis texturizados e massinha de modelar para atividades criativas" 
+                         class="category-image">
+                    <h3 id="artes-title" class="category-title">Artes</h3>
+                    <p class="category-description">Materiais criativos que estimulam a expressão artística e o desenvolvimento da imaginação.</p>
+                    <ul class="category-features" aria-label="Recursos de artes disponíveis">
+                        <li>Tintas e pincéis adaptados</li>
+                        <li>Papéis texturizados e coloridos</li>
+                        <li>Moldes e carimbos temáticos</li>
+                        <li>Massinha de modelar atóxica</li>
+                        <li>Projetos artísticos guiados</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn" aria-label="Saiba mais sobre materiais de artes">Saiba Mais</a>
+                </article>
+
+                <!-- Ciências -->
+                <article class="category-card" role="article" aria-labelledby="ciencias-title">
+                    <i class="fas fa-microscope category-icon" aria-hidden="true"></i>
+                    <img src="https://cdn.abacus.ai/images/d42afd7b-9247-4dfe-b84f-dc42c68a55c7.png" 
+                         alt="Criança usando lupa para observar elementos da natureza em kit de experimentos científicos infantis" 
+                         class="category-image">
+                    <h3 id="ciencias-title" class="category-title">Ciências</h3>
+                    <p class="category-description">Experiências seguras e envolventes que despertam a curiosidade científica natural das crianças.</p>
+                    <ul class="category-features" aria-label="Recursos de ciências disponíveis">
+                        <li>Lupas e instrumentos de observação</li>
+                        <li>Kits de experimentos simples</li>
+                        <li>Coleções de elementos naturais</li>
+                        <li>Modelos anatômicos infantis</li>
+                        <li>Guias de exploração da natureza</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn" aria-label="Saiba mais sobre materiais de ciências">Saiba Mais</a>
+                </article>
+
+                <!-- Música -->
+                <article class="category-card" role="article" aria-labelledby="musica-title">
+                    <i class="fas fa-music category-icon" aria-hidden="true"></i>
+                    <img src="https://cdn.abacus.ai/images/875f209c-9d91-4869-8d70-545c89b52d83.png" 
+                         alt="Conjunto de instrumentos musicais infantis coloridos incluindo xilofone, maracas, chocalhos e tambores para educação musical" 
+                         class="category-image">
+                    <h3 id="musica-title" class="category-title">Música</h3>
+                    <p class="category-description">Instrumentos e materiais musicais que desenvolvem o ritmo, coordenação e expressão musical.</p>
+                    <ul class="category-features" aria-label="Recursos de música disponíveis">
+                        <li>Instrumentos de percussão infantis</li>
+                        <li>Xilofones coloridos</li>
+                        <li>Maracas e chocalhos</li>
+                        <li>CDs com músicas educativas</li>
+                        <li>Jogos rítmicos e corporais</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn" aria-label="Saiba mais sobre materiais de música">Saiba Mais</a>
+                </article>
+
+                <!-- Psicomotricidade -->
+                <article class="category-card" role="article" aria-labelledby="psicomotricidade-title">
+                    <i class="fas fa-running category-icon" aria-hidden="true"></i>
+                    <img src="https://cdn.abacus.ai/images/45884292-bfbe-4ac5-8dee-347ddec2e1dc.png" 
+                         alt="Circuito de psicomotricidade com cones coloridos, cordas, bolas sensoriais e obstáculos para desenvolvimento motor infantil" 
+                         class="category-image">
+                    <h3 id="psicomotricidade-title" class="category-title">Psicomotricidade</h3>
+                    <p class="category-description">Equipamentos e jogos que promovem o desenvolvimento motor, equilíbrio e coordenação.</p>
+                    <ul class="category-features" aria-label="Recursos de psicomotricidade disponíveis">
+                        <li>Cones e obstáculos coloridos</li>
+                        <li>Cordas e elásticos para atividades</li>
+                        <li>Bolas sensoriais variadas</li>
+                        <li>Circuitos de habilidades motoras</li>
+                        <li>Jogos de equilíbrio e coordenação</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn" aria-label="Saiba mais sobre materiais de psicomotricidade">Saiba Mais</a>
+                </article>
+            </div>
+        </div>
+    </section>
+
+        <!-- SEÇÃO SOBRE -->
+        <section id="sobre" class="section section-alt" aria-labelledby="sobre-title">
+            <div class="container">
+                <h2 id="sobre-title">Sobre o Tijolinhos do Saber</h2>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Nossa Missão</h3>
+                        <p>Acreditamos que <strong>cada criança é única</strong> e possui um potencial infinito de aprendizagem. Nossos materiais pedagógicos são cuidadosamente desenvolvidos para respeitar o ritmo individual de cada criança, proporcionando experiências de aprendizagem significativas e prazerosas.</p>
+                        
+                        <h4>Nossos Valores</h4>
+                        <p>Trabalhamos com base na <em>pedagogia construtivista</em>, onde a criança é protagonista do seu próprio aprendizado. Nossos materiais estimulam a curiosidade natural, a criatividade e o pensamento crítico, sempre de forma lúdica e respeitosa.</p>
+                        
+                        <p>Com mais de <span class="text-highlight">10 anos de experiência</span> em educação infantil, nossa equipe multidisciplinar desenvolve cada material com rigor pedagógico e muito carinho, pensando sempre no bem-estar e desenvolvimento integral das crianças.</p>
+                    </div>
+                    
+                    <div class="about-image">
+                        <!-- Acessibilidade: Texto alternativo descritivo e contextual -->
+                        <img src="https://cdn.abacus.ai/images/ccd31c78-fa09-456a-94a0-c90cebc41698.png" 
+                             alt="Grupo de crianças felizes brincando e aprendendo juntas com diversos materiais pedagógicos coloridos em ambiente educativo acolhedor" 
+                             loading="lazy">
+                    </div>
+                </div>
+
+            <!-- Acessibilidade: Lista de características com roles apropriados -->
+            <div class="features-list" role="region" aria-labelledby="features-title">
+                <h3 id="features-title" class="sr-only">Nossos Diferenciais</h3>
+                
+                <div class="feature-item" role="article">
+                    <i class="fas fa-heart feature-icon" aria-hidden="true"></i>
+                    <h4>Feito com Amor</h4>
+                    <p>Cada material é desenvolvido com carinho e atenção aos detalhes, pensando no bem-estar das crianças.</p>
+                </div>
+                
+                <div class="feature-item" role="article">
+                    <i class="fas fa-graduation-cap feature-icon" aria-hidden="true"></i>
+                    <h4>Base Pedagógica</h4>
+                    <p>Fundamentados em teorias educacionais sólidas e práticas comprovadas na educação infantil.</p>
+                </div>
+                
+                <div class="feature-item" role="article">
+                    <i class="fas fa-leaf feature-icon" aria-hidden="true"></i>
+                    <h4>Sustentável</h4>
+                    <p>Utilizamos materiais ecológicos e sustentáveis, cuidando do futuro das nossas crianças.</p>
+                </div>
+                
+                <div class="feature-item" role="article">
+                    <i class="fas fa-shield-alt feature-icon" aria-hidden="true"></i>
+                    <h4>Segurança</h4>
+                    <p>Todos os nossos materiais são seguros, atóxicos e adequados para a faixa etária da educação infantil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- SEÇÃO CONTATO -->
+        <section id="contato" class="section section-bg" aria-labelledby="contato-title">
+            <div class="container">
+                <h2 id="contato-title">Entre em Contato</h2>
+                <p class="text-center mb-2">Tem dúvidas sobre nossos materiais? Quer saber mais sobre nossa proposta pedagógica? Entre em contato conosco!</p>
+                
+                <div class="contact-content">
+                    <!-- Acessibilidade: Formulário com melhor estrutura semântica -->
+                    <div class="contact-form">
+                        <form id="contact-form" novalidate aria-labelledby="form-title">
+                            <h3 id="form-title" class="sr-only">Formulário de Contato</h3>
+                            
+                            <!-- Acessibilidade: Instruções gerais do formulário -->
+                            <div class="form-instructions" aria-live="polite">
+                                <p><small>Campos marcados com * são obrigatórios</small></p>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="name">Nome Completo</label>
+                                <input type="text" 
+                                       id="name" 
+                                       name="name" 
+                                       required 
+                                       aria-describedby="name-help"
+                                       autocomplete="name">
+                                <div id="name-help" class="sr-only">Digite seu nome completo</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail</label>
+                                <input type="email" 
+                                       id="email" 
+                                       name="email" 
+                                       required 
+                                       aria-describedby="email-help"
+                                       autocomplete="email">
+                                <div id="email-help" class="sr-only">Digite um endereço de e-mail válido</div>
+                            </div>
+                            
+                            <div class="form-group optional">
+                                <label for="phone">Telefone</label>
+                                <input type="tel" 
+                                       id="phone" 
+                                       name="phone" 
+                                       aria-describedby="phone-help"
+                                       autocomplete="tel">
+                                <div id="phone-help" class="sr-only">Campo opcional. Digite seu telefone com DDD</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" 
+                                       id="subject" 
+                                       name="subject" 
+                                       required 
+                                       aria-describedby="subject-help"
+                                       autocomplete="off">
+                                <div id="subject-help" class="sr-only">Descreva brevemente o assunto da sua mensagem</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" 
+                                          name="message" 
+                                          rows="5" 
+                                          required 
+                                          aria-describedby="message-help"
+                                          maxlength="1000"></textarea>
+                                <div id="message-help" class="sr-only">Digite sua mensagem. Máximo de 1000 caracteres</div>
+                            </div>
+                            
+                            <!-- Acessibilidade: Status de envio para leitores de tela -->
+                            <div id="form-status" aria-live="polite" aria-atomic="true" class="sr-only"></div>
+                            
+                            <button type="submit" 
+                                    class="submit-btn" 
+                                    id="submit-btn"
+                                    aria-describedby="submit-help">
+                                <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                                Enviar Mensagem
+                            </button>
+                            <div id="submit-help" class="sr-only">Clique para enviar sua mensagem. Aguarde confirmação</div>
+                        </form>
+                    </div>
+                
+                    <!-- Acessibilidade: Informações de contato com estrutura semântica -->
+                    <aside class="contact-info" role="complementary" aria-labelledby="contact-info-title">
+                        <h3 id="contact-info-title" class="sr-only">Informações de Contato</h3>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                            <div class="contact-item-content">
+                                <h4>Endereço</h4>
+                                <!-- Acessibilidade: Endereço estruturado -->
+                                <address>
+                                    Rua das Crianças, 123<br>
+                                    Bairro Educação<br>
+                                    São Paulo - SP<br>
+                                    CEP: 01234-567
+                                </address>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone" aria-hidden="true"></i>
+                            <div class="contact-item-content">
+                                <h4>Telefones</h4>
+                                <!-- Acessibilidade: Links telefônicos -->
+                                <p>
+                                    <a href="tel:+551112345678" aria-label="Ligar para (11) 1234-5678">(11) 1234-5678</a><br>
+                                    <a href="tel:+5511987654321" aria-label="Ligar para (11) 98765-4321">(11) 98765-4321</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                            <div class="contact-item-content">
+                                <h4>E-mail</h4>
+                                <!-- Acessibilidade: Links de e-mail descritivos -->
+                                <p>
+                                    <a href="mailto:contato@tijolinhosdosaber.com.br" aria-label="Enviar e-mail para contato geral">contato@tijolinhosdosaber.com.br</a><br>
+                                    <a href="mailto:pedagogico@tijolinhosdosaber.com.br" aria-label="Enviar e-mail para equipe pedagógica">pedagogico@tijolinhosdosaber.com.br</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock" aria-hidden="true"></i>
+                            <div class="contact-item-content">
+                                <h4>Horário de Atendimento</h4>
+                                <!-- Acessibilidade: Horários estruturados -->
+                                <p>
+                                    <time>Segunda a Sexta: 8h às 18h</time><br>
+                                    <time>Sábado: 9h às 14h</time>
+                                </p>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- RODAPÉ -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Acessibilidade: Seção principal do rodapé -->
+                <div class="footer-section">
+                    <h3>Tijolinhos do Saber</h3>
+                    <p>Transformando o aprendizado em aventuras inesquecíveis para nossas crianças. Materiais pedagógicos que fazem a diferença na educação infantil.</p>
+                    
+                    <!-- Acessibilidade: Redes sociais com labels descritivos -->
+                    <div class="social-links" role="navigation" aria-label="Redes sociais">
+                        <a href="#" class="social-link" aria-label="Seguir no Facebook">
+                            <i class="fab fa-facebook-f" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Seguir no Instagram">
+                            <i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Seguir no YouTube">
+                            <i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Conversar no WhatsApp">
+                            <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                            <span class="sr-only">WhatsApp</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Acessibilidade: Menu de navegação do rodapé -->
+                <nav class="footer-section" role="navigation" aria-label="Menu do rodapé">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Acessibilidade: Menu de categorias -->
+                <nav class="footer-section" role="navigation" aria-label="Categorias de materiais">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="#categorias" aria-label="Ver materiais de alfabetização">Alfabetização</a></li>
+                        <li><a href="#categorias" aria-label="Ver materiais de matemática">Matemática</a></li>
+                        <li><a href="#categorias" aria-label="Ver materiais de artes">Artes</a></li>
+                        <li><a href="#categorias" aria-label="Ver materiais de ciências">Ciências</a></li>
+                        <li><a href="#categorias" aria-label="Ver materiais de música">Música</a></li>
+                        <li><a href="#categorias" aria-label="Ver materiais de psicomotricidade">Psicomotricidade</a></li>
+                    </ul>
+                </nav>
+                
+                <!-- Acessibilidade: Informações de contato do rodapé -->
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt" aria-hidden="true"></i> São Paulo - SP</p>
+                    <p><i class="fas fa-phone" aria-hidden="true"></i> <a href="tel:+551112345678">(11) 1234-5678</a></p>
+                    <p><i class="fas fa-envelope" aria-hidden="true"></i> <a href="mailto:contato@tijolinhosdosaber.com.br">contato@tijolinhosdosaber.com.br</a></p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tijolinhos do Saber. Todos os direitos reservados. Desenvolvido com <i class="fas fa-heart" style="color: #ff6b6b;" aria-hidden="true"></i> para a educação infantil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button class="back-to-top" 
+            id="back-to-top" 
+            aria-label="Voltar ao topo da página"
+            title="Voltar ao topo">
+        <i class="fas fa-arrow-up" aria-hidden="true"></i>
+        <span class="sr-only">Voltar ao topo</span>
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // =================================
+        // ACESSIBILIDADE E NAVEGAÇÃO MOBILE
+        // =================================
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const header = document.getElementById('header');
+        const backToTopBtn = document.getElementById('back-to-top');
+        
+        // Acessibilidade: Variável para controlar foco
+        let isMenuOpen = false;
+
+        // Acessibilidade: Toggle do menu mobile melhorado
+        mobileMenuBtn.addEventListener('click', () => {
+            isMenuOpen = !isMenuOpen;
+            navMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+                // Acessibilidade: Atualizar aria-expanded e label
+                mobileMenuBtn.setAttribute('aria-expanded', 'true');
+                mobileMenuBtn.setAttribute('aria-label', 'Fechar menu de navegação');
+                
+                // Acessibilidade: Focar no primeiro item do menu
+                const firstLink = navMenu.querySelector('.nav-link');
+                if (firstLink) {
+                    setTimeout(() => firstLink.focus(), 100);
+                }
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                // Acessibilidade: Atualizar aria-expanded e label
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenuBtn.setAttribute('aria-label', 'Abrir menu de navegação');
+            }
+        });
+
+        // Acessibilidade: Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                closeMenu();
+                // Acessibilidade: Marcar link ativo
+                updateActiveNavLink(link);
+            });
+        });
+
+        // Acessibilidade: Função para fechar o menu
+        function closeMenu() {
+            if (isMenuOpen) {
+                isMenuOpen = false;
+                navMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+                mobileMenuBtn.setAttribute('aria-expanded', 'false');
+                mobileMenuBtn.setAttribute('aria-label', 'Abrir menu de navegação');
+            }
+        }
+
+        // Acessibilidade: Atualizar link ativo na navegação
+        function updateActiveNavLink(activeLink) {
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.removeAttribute('aria-current');
+            });
+            activeLink.setAttribute('aria-current', 'page');
+        }
+
+        // Acessibilidade: Fechar menu com tecla Escape
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && isMenuOpen) {
+                closeMenu();
+                mobileMenuBtn.focus();
+            }
+        });
+
+        // =================================
+        // SCROLL EFFECTS
+        // =================================
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            
+            // Header com efeito de scroll
+            if (scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Botão voltar ao topo
+            if (scrollY > 500) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Funcionalidade do botão voltar ao topo
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // =================================
+        // ANIMAÇÕES NA ENTRADA DA VIEWPORT
+        // =================================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animação
+        document.querySelectorAll('.category-card, .feature-item, .contact-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // =================================
+        // FORMULÁRIO DE CONTATO ACESSÍVEL
+        // =================================
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+        const formStatus = document.getElementById('form-status');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Acessibilidade: Validar formulário antes de enviar
+            if (!validateForm()) {
+                return;
+            }
+            
+            // Acessibilidade: Anunciar início do envio
+            updateFormStatus('Enviando mensagem...', 'info');
+            
+            // Mostrar loading
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<div class="loading"></div> Enviando...';
+            submitBtn.disabled = true;
+            submitBtn.setAttribute('aria-describedby', 'form-status');
+            
+            // Simular envio do formulário
+            try {
+                await simulateFormSubmission();
+                
+                // Acessibilidade: Anunciar sucesso
+                updateFormStatus('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+                showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+                contactForm.reset();
+                
+                // Acessibilidade: Focar no primeiro campo após reset
+                setTimeout(() => {
+                    const firstInput = contactForm.querySelector('input');
+                    if (firstInput) firstInput.focus();
+                }, 100);
+                
+            } catch (error) {
+                // Acessibilidade: Anunciar erro
+                updateFormStatus('Ops! Ocorreu um erro ao enviar a mensagem. Tente novamente.', 'error');
+                showNotification('Ops! Ocorreu um erro ao enviar a mensagem. Tente novamente.', 'error');
+            } finally {
+                // Restaurar botão
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+                submitBtn.removeAttribute('aria-describedby');
+            }
+        });
+
+        // Acessibilidade: Função para atualizar status do formulário para leitores de tela
+        function updateFormStatus(message, type) {
+            if (formStatus) {
+                formStatus.textContent = message;
+                formStatus.className = `sr-only form-status-${type}`;
+            }
+        }
+
+        // Acessibilidade: Validação completa do formulário
+        function validateForm() {
+            let isValid = true;
+            const inputs = contactForm.querySelectorAll('input[required], textarea[required]');
+            
+            inputs.forEach(input => {
+                if (!input.value.trim()) {
+                    showInputError(input, 'Este campo é obrigatório');
+                    isValid = false;
+                } else {
+                    clearValidation({ target: input });
+                }
+            });
+            
+            // Validação específica de e-mail
+            const emailInput = contactForm.querySelector('#email');
+            if (emailInput.value && !isValidEmail(emailInput.value)) {
+                showInputError(emailInput, 'Digite um e-mail válido');
+                isValid = false;
+            }
+            
+            if (!isValid) {
+                // Acessibilidade: Focar no primeiro campo com erro
+                const firstError = contactForm.querySelector('.error');
+                if (firstError) {
+                    firstError.focus();
+                    updateFormStatus('Há erros no formulário. Verifique os campos destacados.', 'error');
+                }
+            }
+            
+            return isValid;
+        }
+
+        // Acessibilidade: Validação de e-mail
+        function isValidEmail(email) {
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            return emailRegex.test(email);
+        }
+
+        // Simular envio do formulário
+        function simulateFormSubmission() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    // Simular sucesso (90% das vezes)
+                    if (Math.random() > 0.1) {
+                        resolve();
+                    } else {
+                        reject(new Error('Erro simulado'));
+                    }
+                }, 2000);
+            });
+        }
+
+        // =================================
+        // SISTEMA DE NOTIFICAÇÕES
+        // =================================
+        function showNotification(message, type = 'info') {
+            // Remover notificação existente
+            const existingNotification = document.querySelector('.notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+            
+            // Criar nova notificação
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#48cab2' : type === 'error' ? '#ff6b6b' : '#45b7d1'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+                z-index: 10000;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+                max-width: 300px;
+                font-weight: 600;
+            `;
+            
+            notification.innerHTML = `
+                <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
+                ${message}
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animar entrada
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Remover após 5 segundos
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 5000);
+        }
+
+        // =================================
+        // SMOOTH SCROLLING PARA LINKS INTERNOS
+        // =================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                
+                if (target) {
+                    const headerHeight = header.offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // =================================
+        // VALIDAÇÃO DE FORMULÁRIO EM TEMPO REAL
+        // =================================
+        const formInputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
+        
+        formInputs.forEach(input => {
+            input.addEventListener('blur', validateInput);
+            input.addEventListener('input', clearValidation);
+        });
+
+        function validateInput(e) {
+            const input = e.target;
+            const value = input.value.trim();
+            
+            // Remover mensagens de erro existentes
+            clearValidation(e);
+            
+            let isValid = true;
+            let errorMessage = '';
+            
+            // Validações específicas
+            switch (input.type) {
+                case 'email':
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (value && !emailRegex.test(value)) {
+                        isValid = false;
+                        errorMessage = 'Digite um e-mail válido';
+                    }
+                    break;
+                    
+                case 'tel':
+                    const phoneRegex = /^[\(\)\s\-\+\d]{10,}$/;
+                    if (value && !phoneRegex.test(value)) {
+                        isValid = false;
+                        errorMessage = 'Digite um telefone válido';
+                    }
+                    break;
+                    
+                default:
+                    if (input.hasAttribute('required') && !value) {
+                        isValid = false;
+                        errorMessage = 'Este campo é obrigatório';
+                    }
+            }
+            
+            // Mostrar erro se inválido
+            if (!isValid) {
+                showInputError(input, errorMessage);
+            }
+        }
+
+        // Acessibilidade: Limpar validação com melhor suporte para leitores de tela
+        function clearValidation(e) {
+            const input = e.target;
+            const errorMsg = input.parentNode.querySelector('.error-message');
+            
+            if (errorMsg) {
+                errorMsg.remove();
+            }
+            
+            // Acessibilidade: Remover atributos de erro
+            input.style.borderColor = '#e1e8ed';
+            input.classList.remove('error');
+            input.removeAttribute('aria-invalid');
+            input.removeAttribute('aria-describedby');
+        }
+
+        // Acessibilidade: Mostrar erro com suporte completo para leitores de tela
+        function showInputError(input, message) {
+            // Acessibilidade: Limpar erro anterior
+            clearValidation({ target: input });
+            
+            // Acessibilidade: Marcar campo como inválido
+            input.style.borderColor = '#ff6b6b';
+            input.classList.add('error');
+            input.setAttribute('aria-invalid', 'true');
+            
+            const errorId = `${input.id}-error`;
+            
+            // Acessibilidade: Criar mensagem de erro com ID único
+            const errorMsg = document.createElement('div');
+            errorMsg.id = errorId;
+            errorMsg.className = 'error-message';
+            errorMsg.setAttribute('role', 'alert');
+            errorMsg.setAttribute('aria-live', 'polite');
+            errorMsg.style.cssText = `
+                color: #ff6b6b;
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            `;
+            errorMsg.innerHTML = `<i class="fas fa-exclamation-circle" aria-hidden="true"></i>${message}`;
+            
+            // Acessibilidade: Associar mensagem de erro ao campo
+            input.setAttribute('aria-describedby', errorId);
+            input.parentNode.appendChild(errorMsg);
+        }
+
+        // =================================
+        // EFEITOS DE HOVER PERSONALIZADOS
+        // =================================
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // =================================
+        // INICIALIZAÇÃO ACESSÍVEL
+        // =================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Acessibilidade: Configurar navegação por teclado
+            setupKeyboardNavigation();
+            
+            // Acessibilidade: Configurar ARIA dinâmico
+            setupDynamicAria();
+            
+            // Acessibilidade: Verificar preferências de movimento
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                // Mostrar notificação apenas se animações estão habilitadas
+                setTimeout(() => {
+                    showNotification('Bem-vindo ao Tijolinhos do Saber! Explore nossos materiais pedagógicos.', 'info');
+                }, 2000);
+                
+                // Adicionar classe fade-in aos elementos visíveis
+                const elementsInView = document.querySelectorAll('.hero-content, .about-text');
+                elementsInView.forEach(el => {
+                    el.classList.add('fade-in');
+                });
+            }
+            
+            // Acessibilidade: Configurar monitoramento de foco
+            setupFocusManagement();
+        });
+
+        // Acessibilidade: Configurar navegação por teclado
+        function setupKeyboardNavigation() {
+            // Permitir navegação com Tab e Enter em cards
+            document.querySelectorAll('.category-card').forEach(card => {
+                card.setAttribute('tabindex', '0');
+                card.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        const link = card.querySelector('.learn-more-btn');
+                        if (link) link.click();
+                    }
+                });
+            });
+        }
+
+        // Acessibilidade: Configurar ARIA dinâmico
+        function setupDynamicAria() {
+            // Marcar seção atual na navegação
+            const currentHash = window.location.hash || '#home';
+            const currentLink = document.querySelector(`a[href="${currentHash}"]`);
+            if (currentLink && currentLink.classList.contains('nav-link')) {
+                updateActiveNavLink(currentLink);
+            }
+        }
+
+        // Acessibilidade: Gerenciar foco para melhor experiência
+        function setupFocusManagement() {
+            // Adicionar indicador visual de foco para mouse
+            document.addEventListener('mousedown', () => {
+                document.body.classList.add('using-mouse');
+            });
+            
+            document.addEventListener('keydown', (e) => {
+                if (e.key === 'Tab') {
+                    document.body.classList.remove('using-mouse');
+                }
+            });
+        }
+
+        // =================================
+        // PREVENÇÃO DE ERROS E LOGGING
+        // =================================
+        window.addEventListener('error', function(e) {
+            console.warn('Erro capturado:', e.error);
+            // Em produção, você poderia enviar este erro para um serviço de monitoramento
+        });
+
+        // Log de interações para analytics (simulado)
+        function logInteraction(action, element) {
+            console.log(`Ação: ${action}, Elemento: ${element}, Timestamp: ${new Date().toISOString()}`);
+            // Em produção, você enviaria estes dados para o Google Analytics ou similar
+        }
+
+        // Rastrear cliques em botões importantes
+        document.querySelectorAll('.cta-button, .learn-more-btn, .submit-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                logInteraction('click', this.textContent.trim());
+            });
+        });
+    </script>
+</body>
+</html>

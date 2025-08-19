@@ -1,0 +1,1481 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tijolinhos do Saber - Materiais Pedagógicos para Educação Infantil</title>
+    <meta name="description" content="Descubra materiais pedagógicos inovadores para educação infantil. Alfabetização, matemática, artes, ciências, música e psicomotricidade.">
+    <meta name="keywords" content="educação infantil, materiais pedagógicos, alfabetização, matemática, artes, ciências, música, psicomotricidade">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One:wght@400&family=Nunito:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        /* =================================
+           RESET E CONFIGURAÇÕES GLOBAIS
+        ================================= */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Nunito', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9ff;
+        }
+
+        /* =================================
+           VARIÁVEIS CSS - CORES ALEGRES
+        ================================= */
+        :root {
+            --primary-color: #ff6b6b;
+            --secondary-color: #4ecdc4;
+            --accent-color: #45b7d1;
+            --warning-color: #feca57;
+            --success-color: #48cab2;
+            --text-dark: #2c3e50;
+            --text-light: #7f8c8d;
+            --bg-light: #f8f9ff;
+            --bg-white: #ffffff;
+            --shadow-light: 0 2px 10px rgba(0,0,0,0.1);
+            --shadow-medium: 0 4px 20px rgba(0,0,0,0.15);
+            --gradient-hero: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            --gradient-section: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+        }
+
+        /* =================================
+           TIPOGRAFIA
+        ================================= */
+        h1, h2, h3 {
+            font-family: 'Fredoka One', cursive;
+            color: var(--text-dark);
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            color: var(--text-light);
+        }
+
+        /* =================================
+           HEADER E NAVEGAÇÃO
+        ================================= */
+        .header {
+            background: var(--bg-white);
+            box-shadow: var(--shadow-light);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            transition: all 0.3s ease;
+        }
+
+        .header.scrolled {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-family: 'Fredoka One', cursive;
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo i {
+            font-size: 2rem;
+            color: var(--secondary-color);
+        }
+
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--text-dark);
+            font-weight: 600;
+            padding: 0.5rem 1rem;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-link:hover {
+            color: var(--primary-color);
+            background: rgba(255, 107, 107, 0.1);
+            transform: translateY(-2px);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--text-dark);
+            cursor: pointer;
+        }
+
+        /* =================================
+           HERO SECTION
+        ================================= */
+        .hero {
+            background: var(--gradient-hero);
+            color: white;
+            padding: 150px 0 100px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('https://imgs.search.brave.com/8UTvcAo921zUlFH0ycx8PUrtTo_Zb3vAbptvJutLPT8/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMjY4/MDI3MC9wZXhlbHMt/cGhvdG8tMjY4MDI3/MC5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA center/cover;
+            opacity: 0.2;
+            z-index: 1;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 4rem;
+            margin-bottom: 1.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--warning-color);
+            color: var(--text-dark);
+            padding: 1rem 2.5rem;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: var(--shadow-medium);
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 25px rgba(0,0,0,0.2);
+            background: #ffd93d;
+        }
+
+        /* =================================
+           SECTIONS GERAIS
+        ================================= */
+        .section {
+            padding: 100px 0;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        .section-bg {
+            background: var(--bg-white);
+        }
+
+        .section-alt {
+            background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+        }
+
+        /* =================================
+           CARDS DE CATEGORIAS
+        ================================= */
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .category-card {
+            background: var(--bg-white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            animation: fadeInScale 0.6s ease forwards;
+            opacity: 0;
+            transform: translateY(30px) scale(0.95);
+        }
+
+        .category-card:nth-child(1) { animation-delay: 0.1s; }
+        .category-card:nth-child(2) { animation-delay: 0.2s; }
+        .category-card:nth-child(3) { animation-delay: 0.3s; }
+        .category-card:nth-child(4) { animation-delay: 0.4s; }
+        .category-card:nth-child(5) { animation-delay: 0.5s; }
+        .category-card:nth-child(6) { animation-delay: 0.6s; }
+
+        .category-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .category-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-section);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .category-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 1.5rem;
+            transition: all 0.3s ease;
+        }
+
+        .category-card:hover .category-image {
+            transform: scale(1.05);
+        }
+
+        .category-icon {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .category-title {
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        .category-description {
+            color: var(--text-light);
+            margin-bottom: 1.5rem;
+        }
+
+        .category-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+
+        .category-features li {
+            padding: 0.3rem 0;
+            color: var(--text-light);
+            position: relative;
+            padding-left: 1.5rem;
+        }
+
+        .category-features li:before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success-color);
+            font-weight: bold;
+        }
+
+        .learn-more-btn {
+            background: var(--accent-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .learn-more-btn:hover {
+            background: #3498db;
+            transform: translateY(-2px);
+        }
+
+        /* =================================
+           SEÇÃO SOBRE
+        ================================= */
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            margin-top: 3rem;
+        }
+
+        .about-text {
+            animation: fadeInLeft 1s ease;
+        }
+
+        .about-image {
+            text-align: center;
+            animation: fadeInRight 1s ease;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-item {
+            background: var(--bg-white);
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+
+        /* =================================
+           FORMULÁRIO DE CONTATO
+        ================================= */
+        .contact-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            margin-top: 3rem;
+        }
+
+        .contact-form {
+            background: var(--bg-white);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 1rem;
+            border: 2px solid #e1e8ed;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .submit-btn {
+            background: var(--primary-color);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            width: 100%;
+        }
+
+        .submit-btn:hover {
+            background: #ff5252;
+            transform: translateY(-2px);
+        }
+
+        .contact-info {
+            padding: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: var(--bg-white);
+            border-radius: 15px;
+            box-shadow: var(--shadow-light);
+            transition: all 0.3s ease;
+        }
+
+        .contact-item:hover {
+            transform: translateX(10px);
+            box-shadow: var(--shadow-medium);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--primary-color);
+            margin-right: 1rem;
+            width: 50px;
+            text-align: center;
+        }
+
+        .contact-item-content h4 {
+            color: var(--text-dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item-content p {
+            color: var(--text-light);
+            margin: 0;
+        }
+
+        /* =================================
+           RODAPÉ
+        ================================= */
+        .footer {
+            background: var(--text-dark);
+            color: white;
+            padding: 3rem 0 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .footer-section p,
+        .footer-section li {
+            color: #bdc3c7;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-section ul {
+            list-style: none;
+        }
+
+        .footer-section a {
+            color: #bdc3c7;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-color);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            background: var(--primary-color);
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            border-radius: 50%;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .social-link:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #34495e;
+            padding-top: 2rem;
+            color: #7f8c8d;
+        }
+
+        /* =================================
+           BOTÃO VOLTAR AO TOPO
+        ================================= */
+        .back-to-top {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 60px;
+            height: 60px;
+            background: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            font-size: 1.5rem;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            z-index: 1000;
+            box-shadow: var(--shadow-medium);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background: var(--secondary-color);
+            transform: translateY(-3px);
+        }
+
+        /* =================================
+           ANIMAÇÕES
+        ================================= */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        /* =================================
+           RESPONSIVIDADE
+        ================================= */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background: var(--bg-white);
+                flex-direction: column;
+                justify-content: start;
+                align-items: center;
+                padding-top: 2rem;
+                transition: left 0.3s ease;
+                box-shadow: var(--shadow-medium);
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .about-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 2rem;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            .section {
+                padding: 60px 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+
+            .hero {
+                padding: 120px 0 80px;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .contact-form {
+                padding: 2rem;
+            }
+
+            .category-card {
+                padding: 1.5rem;
+            }
+
+            .back-to-top {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+                right: 20px;
+                font-size: 1.2rem;
+            }
+        }
+
+        /* =================================
+           UTILIDADES
+        ================================= */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .fade-in {
+            animation: fadeInUp 0.6s ease forwards;
+        }
+
+        /* Loading Animation */
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid var(--primary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER E NAVEGAÇÃO -->
+    <header class="header" id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <i class="fas fa-cube"></i>
+                Tijolinhos do Saber
+            </a>
+            
+            <nav>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Início</a></li>
+                    <li><a href="#categorias" class="nav-link">Categorias</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Tijolinhos do Saber</h1>
+            <p>Materiais pedagógicos inovadores que transformam o aprendizado em uma aventura divertida e significativa para crianças da educação infantil.</p>
+            <a href="#categorias" class="cta-button">
+                <i class="fas fa-rocket"></i>
+                Descobrir Materiais
+            </a>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CATEGORIAS -->
+    <section id="categorias" class="section section-bg">
+        <div class="container">
+            <h2>Nossas Categorias de Materiais</h2>
+            <p class="text-center mb-2">Explore nossa coleção completa de materiais pedagógicos desenvolvidos especialmente para potencializar o desenvolvimento infantil</p>
+            
+            <div class="categories-grid">
+                <!-- Alfabetização -->
+                <div class="category-card">
+                    <i class="fas fa-book-open category-icon"></i>
+                    <img src="https://cdn.abacus.ai/images/7ee7638c-b4ce-4173-bbea-c8b4d323f639.png" alt="Materiais de Alfabetização" class="category-image">
+                    <h3 class="category-title">Alfabetização</h3>
+                    <p class="category-description">Materiais lúdicos e interativos para desenvolver a leitura e escrita de forma natural e divertida.</p>
+                    <ul class="category-features">
+                        <li>Cartões ilustrados com palavras</li>
+                        <li>Jogos de formação de sílabas</li>
+                        <li>Livrinhos de histórias simples</li>
+                        <li>Alfabeto móvel colorido</li>
+                        <li>Atividades de coordenação motora</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn">Saiba Mais</a>
+                </div>
+
+                <!-- Matemática -->
+                <div class="category-card">
+                    <i class="fas fa-calculator category-icon"></i>
+                    <img src="https://cdn.abacus.ai/images/615ba73d-ae58-4bc7-9a67-b9b31a7adc85.png" alt="Materiais de Matemática" class="category-image">
+                    <h3 class="category-title">Matemática</h3>
+                    <p class="category-description">Recursos manipulativos que tornam os conceitos matemáticos concretos e compreensíveis.</p>
+                    <ul class="category-features">
+                        <li>Blocos de contagem coloridos</li>
+                        <li>Ábacos e materiais de contagem</li>
+                        <li>Jogos de formas geométricas</li>
+                        <li>Atividades de classificação</li>
+                        <li>Números e quantidades visuais</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn">Saiba Mais</a>
+                </div>
+
+                <!-- Artes -->
+                <div class="category-card">
+                    <i class="fas fa-palette category-icon"></i>
+                    <img src="https://cdn.abacus.ai/images/92b09361-2eda-4147-9bdb-ca71384836b1.png" alt="Materiais de Artes" class="category-image">
+                    <h3 class="category-title">Artes</h3>
+                    <p class="category-description">Materiais criativos que estimulam a expressão artística e o desenvolvimento da imaginação.</p>
+                    <ul class="category-features">
+                        <li>Tintas e pincéis adaptados</li>
+                        <li>Papéis texturizados e coloridos</li>
+                        <li>Moldes e carimbos temáticos</li>
+                        <li>Massinha de modelar atóxica</li>
+                        <li>Projetos artísticos guiados</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn">Saiba Mais</a>
+                </div>
+
+                <!-- Ciências -->
+                <div class="category-card">
+                    <i class="fas fa-microscope category-icon"></i>
+                    <img src="https://cdn.abacus.ai/images/d42afd7b-9247-4dfe-b84f-dc42c68a55c7.png" alt="Materiais de Ciências" class="category-image">
+                    <h3 class="category-title">Ciências</h3>
+                    <p class="category-description">Experiências seguras e envolventes que despertam a curiosidade científica natural das crianças.</p>
+                    <ul class="category-features">
+                        <li>Lupas e instrumentos de observação</li>
+                        <li>Kits de experimentos simples</li>
+                        <li>Coleções de elementos naturais</li>
+                        <li>Modelos anatômicos infantis</li>
+                        <li>Guias de exploração da natureza</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn">Saiba Mais</a>
+                </div>
+
+                <!-- Música -->
+                <div class="category-card">
+                    <i class="fas fa-music category-icon"></i>
+                    <img src="https://cdn.abacus.ai/images/875f209c-9d91-4869-8d70-545c89b52d83.png" alt="Materiais de Música" class="category-image">
+                    <h3 class="category-title">Música</h3>
+                    <p class="category-description">Instrumentos e materiais musicais que desenvolvem o ritmo, coordenação e expressão musical.</p>
+                    <ul class="category-features">
+                        <li>Instrumentos de percussão infantis</li>
+                        <li>Xilofones coloridos</li>
+                        <li>Maracas e chocalhos</li>
+                        <li>CDs com músicas educativas</li>
+                        <li>Jogos rítmicos e corporais</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn">Saiba Mais</a>
+                </div>
+
+                <!-- Psicomotricidade -->
+                <div class="category-card">
+                    <i class="fas fa-running category-icon"></i>
+                    <img src="https://cdn.abacus.ai/images/45884292-bfbe-4ac5-8dee-347ddec2e1dc.png" alt="Materiais de Psicomotricidade" class="category-image">
+                    <h3 class="category-title">Psicomotricidade</h3>
+                    <p class="category-description">Equipamentos e jogos que promovem o desenvolvimento motor, equilíbrio e coordenação.</p>
+                    <ul class="category-features">
+                        <li>Cones e obstáculos coloridos</li>
+                        <li>Cordas e elásticos para atividades</li>
+                        <li>Bolas sensoriais variadas</li>
+                        <li>Circuitos de habilidades motoras</li>
+                        <li>Jogos de equilíbrio e coordenação</li>
+                    </ul>
+                    <a href="#contato" class="learn-more-btn">Saiba Mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section id="sobre" class="section section-alt">
+        <div class="container">
+            <h2>Sobre o Tijolinhos do Saber</h2>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Nossa Missão</h3>
+                    <p>Acreditamos que cada criança é única e possui um potencial infinito de aprendizagem. Nossos materiais pedagógicos são cuidadosamente desenvolvidos para respeitar o ritmo individual de cada criança, proporcionando experiências de aprendizagem significativas e prazerosas.</p>
+                    
+                    <h3>Nossos Valores</h3>
+                    <p>Trabalhamos com base na pedagogia construtivista, onde a criança é protagonista do seu próprio aprendizado. Nossos materiais estimulam a curiosidade natural, a criatividade e o pensamento crítico, sempre de forma lúdica e respeitosa.</p>
+                    
+                    <p>Com mais de 10 anos de experiência em educação infantil, nossa equipe multidisciplinar desenvolve cada material com rigor pedagógico e muito carinho, pensando sempre no bem-estar e desenvolvimento integral das crianças.</p>
+                </div>
+                
+                <div class="about-image">
+                    <img src="https://cdn.abacus.ai/images/ccd31c78-fa09-456a-94a0-c90cebc41698.png" alt="Crianças aprendendo com materiais pedagógicos">
+                </div>
+            </div>
+
+            <div class="features-list">
+                <div class="feature-item">
+                    <i class="fas fa-heart feature-icon"></i>
+                    <h3>Feito com Amor</h3>
+                    <p>Cada material é desenvolvido com carinho e atenção aos detalhes, pensando no bem-estar das crianças.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <i class="fas fa-graduation-cap feature-icon"></i>
+                    <h3>Base Pedagógica</h3>
+                    <p>Fundamentados em teorias educacionais sólidas e práticas comprovadas na educação infantil.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <i class="fas fa-leaf feature-icon"></i>
+                    <h3>Sustentável</h3>
+                    <p>Utilizamos materiais ecológicos e sustentáveis, cuidando do futuro das nossas crianças.</p>
+                </div>
+                
+                <div class="feature-item">
+                    <i class="fas fa-shield-alt feature-icon"></i>
+                    <h3>Segurança</h3>
+                    <p>Todos os nossos materiais são seguros, atóxicos e adequados para a faixa etária da educação infantil.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section id="contato" class="section section-bg">
+        <div class="container">
+            <h2>Entre em Contato</h2>
+            <p class="text-center mb-2">Tem dúvidas sobre nossos materiais? Quer saber mais sobre nossa proposta pedagógica? Entre em contato conosco!</p>
+            
+            <div class="contact-content">
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nome Completo</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">E-mail</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Telefone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn" id="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div class="contact-item-content">
+                            <h4>Endereço</h4>
+                            <p>Rua das Crianças, 123<br>
+                            Bairro Educação<br>
+                            São Paulo - SP<br>
+                            CEP: 01234-567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-item-content">
+                            <h4>Telefones</h4>
+                            <p>(11) 1234-5678<br>
+                            (11) 98765-4321</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-item-content">
+                            <h4>E-mail</h4>
+                            <p>contato@tijolinhosdosaber.com.br<br>
+                            pedagogico@tijolinhosdosaber.com.br</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-item-content">
+                            <h4>Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 8h às 18h<br>
+                            Sábado: 9h às 14h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tijolinhos do Saber</h3>
+                    <p>Transformando o aprendizado em aventuras inesquecíveis para nossas crianças. Materiais pedagógicos que fazem a diferença na educação infantil.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#home">Início</a></li>
+                        <li><a href="#categorias">Categorias</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                        <li><a href="#contato">Contato</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Categorias</h3>
+                    <ul>
+                        <li><a href="#categorias">Alfabetização</a></li>
+                        <li><a href="#categorias">Matemática</a></li>
+                        <li><a href="#categorias">Artes</a></li>
+                        <li><a href="#categorias">Ciências</a></li>
+                        <li><a href="#categorias">Música</a></li>
+                        <li><a href="#categorias">Psicomotricidade</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contato</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> São Paulo - SP</p>
+                    <p><i class="fas fa-phone"></i> (11) 1234-5678</p>
+                    <p><i class="fas fa-envelope"></i> contato@tijolinhosdosaber.com.br</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Tijolinhos do Saber. Todos os direitos reservados. Desenvolvido com <i class="fas fa-heart" style="color: #ff6b6b;"></i> para a educação infantil.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO VOLTAR AO TOPO -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        // =================================
+        // NAVEGAÇÃO MOBILE
+        // =================================
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const navMenu = document.getElementById('nav-menu');
+        const header = document.getElementById('header');
+        const backToTopBtn = document.getElementById('back-to-top');
+
+        // Toggle do menu mobile
+        mobileMenuBtn.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            const icon = mobileMenuBtn.querySelector('i');
+            
+            if (navMenu.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // =================================
+        // SCROLL EFFECTS
+        // =================================
+        window.addEventListener('scroll', () => {
+            const scrollY = window.scrollY;
+            
+            // Header com efeito de scroll
+            if (scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Botão voltar ao topo
+            if (scrollY > 500) {
+                backToTopBtn.classList.add('visible');
+            } else {
+                backToTopBtn.classList.remove('visible');
+            }
+        });
+
+        // Funcionalidade do botão voltar ao topo
+        backToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // =================================
+        // ANIMAÇÕES NA ENTRADA DA VIEWPORT
+        // =================================
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        // Observar elementos para animação
+        document.querySelectorAll('.category-card, .feature-item, .contact-item').forEach(el => {
+            observer.observe(el);
+        });
+
+        // =================================
+        // FORMULÁRIO DE CONTATO
+        // =================================
+        const contactForm = document.getElementById('contact-form');
+        const submitBtn = document.getElementById('submit-btn');
+
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            // Mostrar loading
+            const originalText = submitBtn.innerHTML;
+            submitBtn.innerHTML = '<div class="loading"></div> Enviando...';
+            submitBtn.disabled = true;
+            
+            // Simular envio do formulário
+            try {
+                await simulateFormSubmission();
+                
+                // Sucesso
+                showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+                contactForm.reset();
+                
+            } catch (error) {
+                // Erro
+                showNotification('Ops! Ocorreu um erro ao enviar a mensagem. Tente novamente.', 'error');
+            } finally {
+                // Restaurar botão
+                submitBtn.innerHTML = originalText;
+                submitBtn.disabled = false;
+            }
+        });
+
+        // Simular envio do formulário
+        function simulateFormSubmission() {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    // Simular sucesso (90% das vezes)
+                    if (Math.random() > 0.1) {
+                        resolve();
+                    } else {
+                        reject(new Error('Erro simulado'));
+                    }
+                }, 2000);
+            });
+        }
+
+        // =================================
+        // SISTEMA DE NOTIFICAÇÕES
+        // =================================
+        function showNotification(message, type = 'info') {
+            // Remover notificação existente
+            const existingNotification = document.querySelector('.notification');
+            if (existingNotification) {
+                existingNotification.remove();
+            }
+            
+            // Criar nova notificação
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                background: ${type === 'success' ? '#48cab2' : type === 'error' ? '#ff6b6b' : '#45b7d1'};
+                color: white;
+                padding: 1rem 1.5rem;
+                border-radius: 10px;
+                box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+                z-index: 10000;
+                transform: translateX(100%);
+                transition: transform 0.3s ease;
+                max-width: 300px;
+                font-weight: 600;
+            `;
+            
+            notification.innerHTML = `
+                <i class="fas ${type === 'success' ? 'fa-check-circle' : type === 'error' ? 'fa-exclamation-circle' : 'fa-info-circle'}"></i>
+                ${message}
+            `;
+            
+            document.body.appendChild(notification);
+            
+            // Animar entrada
+            setTimeout(() => {
+                notification.style.transform = 'translateX(0)';
+            }, 100);
+            
+            // Remover após 5 segundos
+            setTimeout(() => {
+                notification.style.transform = 'translateX(100%)';
+                setTimeout(() => {
+                    notification.remove();
+                }, 300);
+            }, 5000);
+        }
+
+        // =================================
+        // SMOOTH SCROLLING PARA LINKS INTERNOS
+        // =================================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                
+                if (target) {
+                    const headerHeight = header.offsetHeight;
+                    const targetPosition = target.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // =================================
+        // VALIDAÇÃO DE FORMULÁRIO EM TEMPO REAL
+        // =================================
+        const formInputs = document.querySelectorAll('#contact-form input, #contact-form textarea');
+        
+        formInputs.forEach(input => {
+            input.addEventListener('blur', validateInput);
+            input.addEventListener('input', clearValidation);
+        });
+
+        function validateInput(e) {
+            const input = e.target;
+            const value = input.value.trim();
+            
+            // Remover mensagens de erro existentes
+            clearValidation(e);
+            
+            let isValid = true;
+            let errorMessage = '';
+            
+            // Validações específicas
+            switch (input.type) {
+                case 'email':
+                    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                    if (value && !emailRegex.test(value)) {
+                        isValid = false;
+                        errorMessage = 'Digite um e-mail válido';
+                    }
+                    break;
+                    
+                case 'tel':
+                    const phoneRegex = /^[\(\)\s\-\+\d]{10,}$/;
+                    if (value && !phoneRegex.test(value)) {
+                        isValid = false;
+                        errorMessage = 'Digite um telefone válido';
+                    }
+                    break;
+                    
+                default:
+                    if (input.hasAttribute('required') && !value) {
+                        isValid = false;
+                        errorMessage = 'Este campo é obrigatório';
+                    }
+            }
+            
+            // Mostrar erro se inválido
+            if (!isValid) {
+                showInputError(input, errorMessage);
+            }
+        }
+
+        function clearValidation(e) {
+            const input = e.target;
+            const errorMsg = input.parentNode.querySelector('.error-message');
+            
+            if (errorMsg) {
+                errorMsg.remove();
+            }
+            
+            input.style.borderColor = '#e1e8ed';
+        }
+
+        function showInputError(input, message) {
+            input.style.borderColor = '#ff6b6b';
+            
+            const errorMsg = document.createElement('div');
+            errorMsg.className = 'error-message';
+            errorMsg.style.cssText = `
+                color: #ff6b6b;
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+                display: flex;
+                align-items: center;
+                gap: 0.5rem;
+            `;
+            errorMsg.innerHTML = `<i class="fas fa-exclamation-circle"></i>${message}`;
+            
+            input.parentNode.appendChild(errorMsg);
+        }
+
+        // =================================
+        // EFEITOS DE HOVER PERSONALIZADOS
+        // =================================
+        document.querySelectorAll('.category-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // =================================
+        // INICIALIZAÇÃO QUANDO DOM ESTÁ PRONTO
+        // =================================
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mostrar uma notificação de boas-vindas
+            setTimeout(() => {
+                showNotification('Bem-vindo ao Tijolinhos do Saber! Explore nossos materiais pedagógicos.', 'info');
+            }, 2000);
+            
+            // Adicionar classe fade-in aos elementos visíveis
+            const elementsInView = document.querySelectorAll('.hero-content, .about-text');
+            elementsInView.forEach(el => {
+                el.classList.add('fade-in');
+            });
+        });
+
+        // =================================
+        // PREVENÇÃO DE ERROS E LOGGING
+        // =================================
+        window.addEventListener('error', function(e) {
+            console.warn('Erro capturado:', e.error);
+            // Em produção, você poderia enviar este erro para um serviço de monitoramento
+        });
+
+        // Log de interações para analytics (simulado)
+        function logInteraction(action, element) {
+            console.log(`Ação: ${action}, Elemento: ${element}, Timestamp: ${new Date().toISOString()}`);
+            // Em produção, você enviaria estes dados para o Google Analytics ou similar
+        }
+
+        // Rastrear cliques em botões importantes
+        document.querySelectorAll('.cta-button, .learn-more-btn, .submit-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                logInteraction('click', this.textContent.trim());
+            });
+        });
+    </script>
+</body>
+</html>
